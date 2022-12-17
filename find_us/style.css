@@ -1,0 +1,95 @@
+html {
+    font-size: 62.35%;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #fff6e0;
+    font-size: 1.5rem;
+    font-family: 'FS Lucas', Helvetica, sans-serif;
+    color: #01785b;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+}
+
+
+header .top {
+    text-align: center;
+    color: #fff6e0;
+    background-color: #01785b;
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+
+header .bottom {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    padding: 1rem 0;
+    background:  linear-gradient(to bottom, rgba(255, 246, 224, 0.5), rgba(255, 246, 224, 0));
+}
+
+header .bottom>div {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+header .left {}
+
+header .text {
+    margin: 0 1rem;
+    white-space: nowrap;
+}
+
+header .center {
+    font-size: 4rem;
+    justify-content: center;
+}
+
+header .right {
+    justify-content: flex-end;
+    margin-right: 4rem;
+}
+
+section {
+    padding-top: 10rem;
+    font-size: 3rem;
+    text-align: center;
+    height: 180vh;
+    background-color: gray
+}
+
+footer {
+    background-color: #01785b;
+    color: #fff6e0;
+    padding: 5rem 8rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+footer>div {
+width: 40%;
+}
+
+footer h1 {
+    font-size: 7rem;
+}
+
+input {
+    background-color:#01785b;
+    border-radius: 2rem;
+    height: 4rem;
+    border: 2px solid #fff6e0;
+    outline: none;
+    color: #fff6e0;
+    width: 80%;
+    margin: 1rem;
+}
