@@ -26,6 +26,13 @@
                 }
             });
         });
+
+        var typed = new Typed(".autotype",{
+            strings: ["By Flavor","Enjoy","Avec"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
     </script>
 </head>
 <body>
@@ -152,7 +159,7 @@
         
         <div class="main-content-secondd">
             <div class="second-content">
-                <h2 class="second-content-text">SHOP BY FLAVOR</h2>
+                <h2 class="second-content-text">SHOP <span class="autotype"></span> BY FLAVOR</h2>
                 <div class="second-content-para">Shop 12-Packs of our 5 flavors</div>
             </div>
             <div class="main-content-third">
@@ -202,7 +209,7 @@
                                 Add To Cart—
                                 <span>$36</span>
                             </button>
-                            <a href="" class="second-button">Shop Flavor</a>
+                            <a href="../button-drink/drink.html" class="second-button">Shop Flavor</a>
                         </form>
                     </div>
                 </div>
@@ -254,7 +261,7 @@
                                 Add To Cart—
                                 <span>$36</span>
                             </button>
-                            <a href="" class="second-button">Shop Flavor</a>
+                            <a href="../button-drink/red-drink.html" class="second-button">Shop Flavor</a>
                         </form>
                     </div>
                 </div>
@@ -301,7 +308,7 @@
                                 Add To Cart—
                                 <span>$36</span>
                             </button>
-                            <a href="" class="second-button">Shop Flavor</a>
+                            <a href="../button-drink/yellow-drink.html" class="second-button">Shop Flavor</a>
                         </form>
                     </div>
                 </div>
@@ -350,7 +357,7 @@
                                 Add To Cart—
                                 <span>$36</span>
                             </button>
-                            <a href="" class="second-button">Shop Flavor</a>
+                            <a href="../button-drink/green-drink.html" class="second-button">Shop Flavor</a>
                         </form>
                     </div>
                 </div>
@@ -397,7 +404,7 @@
                                 Add To Cart—
                                 <span>$36</span>
                             </button>
-                            <a href="" class="second-button">Shop Flavor</a>
+                            <a href="../button-drink/pink-drink.html" class="second-button">Shop Flavor</a>
                         </form>
                     </div>
                 </div>
@@ -444,7 +451,7 @@
                                 Add To Cart—
                                 <span>$36</span>
                             </button>
-                            <a href="" class="second-button">Shop Flavor</a>
+                            <a href="../button-drink/white-drink.html" class="second-button">Shop Flavor</a>
                         </form>
                     </div>
                 </div>
@@ -461,6 +468,34 @@
             </div>
         </div>
     </main>
+
+    <section class="cart">
+        <div class="cart-main"></div>
+        <div class="cart-part">
+            <div class="cart-text">
+                <button class="cart-button">
+                    <span class="button-text">Cart</span>
+                    <span class="znak"><svg width="100%" height="100%" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L17.9706 17.9706" stroke="var(--theme-secondary)" stroke-width="3"></path>
+                        <path d="M1 17.9705L17.9706 0.999897" stroke="var(--theme-secondary)" stroke-width="3"></path>
+                    </svg></span>
+                </button>
+                <form class="cart-form">
+                    <div></div>
+
+                </form>
+            </div>
+            <div class="checkout">
+                <button class="submit">
+                    Checkout
+                    <span class="total">$0</span>
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     
 </body>
 </html>

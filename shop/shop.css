@@ -326,7 +326,95 @@ button:hover, a:hover{
     background-color: #105544;
     color: #FFF6E0;
 }
-
+.cart{
+    z-index: 999;
+    position: fixed;
+    right: 0rem;
+    top: 0rem;
+    left: 0rem;
+    width: 100vw;
+    
+    pointer-events: unset;
+    --theme-primary: #FFF6E0;
+    --theme-secondary: #01785B;
+    height: calc(var(--vh, 1vh) * 100);
+    display: none;
+}
+.cart-main{
+    width: 100vw;
+    height: 1vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    
+    
+}
+.cart-part{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background-color: rgba(255,246,224,1);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 48rem;
+    justify-content: space-between;
+    border-left-width: 1px;
+    border-style: solid;
+    height: calc(var(--vh, 1vh) * 100);
+    transform: translate(0)!important;
+    
+}
+.cart-text{
+    padding-top: 1.5rem;
+    overflow-y: auto;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+.cart-button{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.button-text{
+    font-family: FS Lucas Bold,serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.znak{
+    display: block;
+    width: 2rem;
+}
+.cart-form{
+    margin: 0;
+    overflow-y: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.checkout{
+    width: calc(100% - 4rem);
+    position: absolute;
+    bottom: 2rem;
+    left:1.5rem;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+.submit{
+    width: 100%;
+    border-radius: 9999px;
+    text-transform: uppercase;
+    padding: 1.5rem;
+}
 @media(min-width: 850px){
     .login{
         width: auto;
@@ -361,4 +449,22 @@ button:hover, a:hover{
     .menu-list{
         display: flex;
     }
+    .cart{
+        position: fixed;
+    }
+    .cart-text{
+        padding-top: 3rem;
+    }
+    .cart-button{
+        padding-left: 2rem;
+        padding-right: 2rem
+    }
+    .cart-form{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .checkout{
+        left: 2rem;
+    }
+
 }
