@@ -1,11 +1,11 @@
 body{
-    --theme-primary: #01785b;
-    --theme-secondary: #fcbf10;
+    --theme-primary: #c53447;
+    --theme-secondary: #f8bcca;
     
     line-height: 1.4;
     font-size: 1.6rem;
     margin:0;
-    background-color: #01785b;
+    background-color: var(--theme-primary);
 }
 
 section{
@@ -17,7 +17,7 @@ section{
     width: 100vw;
     overflow: hidden;
     padding-right: 2rem;
-    padding-bottom: 6rem;
+    padding-bottom: -9rem;
     
 }
 .content{
@@ -100,10 +100,10 @@ section{
     padding-right: 1rem;
     text-align: left;
     font-size: 1.2rem;
-    background: #01785b;
+    background: var(--theme-primary);
     border: 0px;
     font-size: 0.7rem;
-    color: #fcbf10;
+    color: var(--theme-secondary);
 }
 .pointer{
     width: 0.8rem;
@@ -285,14 +285,15 @@ a{
     width: 100vw;
     background-color: var(--theme-primary);
     padding-right: 2rem;
-    padding-bottom: -5rem;
+    padding-bottom: -10rem;
+    padding-top: -6rem;
 }
 .images{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     display: flex;
-    max-width: 80rem;
+    max-width: 65rem;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -446,7 +447,7 @@ a{
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 6px solid #fcbf10;
+    border-top: 6px solid var(--theme-secondary);
     transition: 0.3s;
     margin-left: 1rem ;
 }
@@ -459,7 +460,8 @@ a{
         margin: auto;
     }
     .main-content{
-        padding-bottom: 3rem;
+        padding-bottom: -10rem;
+        padding-top: -10rem;
     }
     .content{
         padding-top: 10rem;
@@ -468,14 +470,15 @@ a{
         flex-direction: row;
     }
     .content-text{
-        width: 50%;
+        margin-top: -6rem;
+        width: 45%;
     }
     .inside-text{
         padding-left: 0rem;
         padding-right: 0rem;
     }
     .main-text{
-        font-size: 6.4rem;
+        font-size: 4rem;
     }
     .rating{
         flex-direction: row;
@@ -517,9 +520,10 @@ a{
     .second-content{
         padding-left: 2rem;
         padding-right: 2rem;
-        padding-top: 2rem;
+        padding-top: -20rem;
         
-        padding-bottom: 1rem;
+        padding-bottom: 0rem
+        
         
     }
     
@@ -530,22 +534,22 @@ a{
         flex-direction: row;
         padding-left: 3rem;
         padding-right: 3rem;
-        padding-top: 10rem;
-        padding-bottom: 10rem;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
 
     }
     .content-img{
         width: 50%;
     }
     .menu{
-        margin-top: 0rem;
-        width: 50%;
+        margin-top: 15rem;
+        width: 40%;
     }
     .fourth-content{
         padding-left: 3rem;
         padding-right: 3rem;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-top: 7rem;
+        padding-bottom: 0rem;
     }
     .container-col{
         flex-direction: row;
@@ -574,6 +578,18 @@ a{
         border-radius: 2rem;
         border-bottom-right-radius: 2rem;
         border-bottom-left-radius: 2rem;
+    }
+    .menushka-topic{
+        font-size: 1.8rem;
+    }
+    .ing{
+        font-size: 1.2rem;
+    }
+    .fourth-main-text{
+        font-size: 2.8rem;
+    }
+    .recipe-items{
+        font-size: 2.8rem;
     }
     
 }
