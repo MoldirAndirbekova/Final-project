@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="second.css">
+    <title>AVEC Drinks</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("l").classList.toggle("show");
+            caret.classList.toggle('caret-rotate');
+            }
+            window.onclick = function(event) {
+            if (!event.target.matches('.caret')) {
+                var dropdowns = document.getElementsByClassName("drop-down");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    caret.classList.remove('caret-rotate');
+                }
+                }
+            }
+            }
+            let a = 1;
+            function increase() {
+                a++;
+                document.getElementById("number").innerText = a;
+            }
+            function decrease() {
+                if(a > 0){
+                    a--;
+                    document.getElementById("number").innerText = a;
+                }
+                
+            }
+
+
+    </script>
+    
+</head>
+<body>
+    <main id="MainContent" role="main">
+        <section>
+        <div class="main-content">
+            <div class="content">
+                <div class="content-text">
+                    <div class="inside-text">
+                        <div class="text">
+                            <h1 class="main-text">
+                                THE SAMPLER
+                            </h1>
+                            <div class="rating">
+                                <span class="rating-text">12 Pack of 8.45 oz Cans</span>
+                                <span>28 Reviews</span>
+                            </div>
+                            
+
+                            <div class="center-text">
+                                <div class="descrip">
+                                    The Sampler gives you the chance to experience 5 AVEC flavors. Inside our little green box of drinks, you'll find 3 cans of the following flavors:
+                                        <br><br>
+                                        • Yuzu & Lime <br>
+                                        • Grapefruit & Pomelo <br>
+                                        • Jalapeño & Blood Orange <br>
+                                        • Hibiscus & Pomegranate <br>
+                                        • Ginger <br><br>
+
+Each box is a total of 15 cans — all of which have less than 6 grams of sugar and can be mixed with a spirit or sipped solo for a non-alc treat.
+                                    
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="bottom-text">
+                                <div class="actions">
+                                    <button class="subscribe">
+                                        <div class="pointer"></div>
+                                        <div class="sub-text">
+                                            <span class="first">Subscribe & Save</span>
+                                            <span class="sec"> $32.40</span>
+
+                                        </div>
+                                    </button>
+                                    <button class="subscribe">
+                                        <div class="pointer"></div>
+                                        <div class="sub-text">
+                                            <span class="first">One-Time Purchase</span>
+                                            <span class="sec"> $36</span>
+
+                                        </div>
+                                    </button>
+
+
+
+                                </div>
+
+                                <div class="first-button" >
+                                    <a href="../shop/Shop.html"><button class="select">
+                                        <span >EXPLORE NEW PRODUCTS</span>
+                                    </span>
+                                    </button>
+                                    
+                                    </a>
+                                    
+                                </div>
+                            
+
+                                
+                                <!-- <div class="third-button" id="bokk">
+                                    <div class="button-content">
+                                        <button class="bl">
+                                            <span>Send as a gift</span>
+                                        </button>
+                                    </div>
+                                </div> -->
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="back-img">
+                   <img src="https://cdn.shopify.com/s/files/1/0266/2760/4565/files/sampler_scene_newcans_1600x.jpg?v=1654123166" class="main-img" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    </main>
+    
+</body>
+</html>
