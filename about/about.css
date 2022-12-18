@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+body{
+    margin: auto 0;
+    white-space: nowrap;
+    background-color: #fff6e0;
+}
+
+.header1{
+    width: 100%;
+    height: 25px;
+    background-color: #01785b;
+    color: #fff6e0;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;  
+    position: fixed;
+    z-index: 3; 
+}
+
+.header2{
+    width: 100%;
+    color:#01785b;
+    margin-top: 2.59rem;
+    padding: 1.7rem 2.4rem 20rem 2.4rem;
+    position: fixed;
+    z-index: 3;
+    display: inline-flex;
+    text-transform: uppercase;
+    text-align: center;
+    box-shadow: inset -30px 80px 30px 10px #fff6e0;
+}
+
+.pages{
+    display: inline-flex;
+}
+
+.pages div{
+    padding-right: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.pages div a{
+    color: #01785b;
+}
+
+.log{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    margin-left: 65%;
+    cursor: pointer;
+}
+
+#avec{
+    text-transform: uppercase;
+    position: fixed;
+    color:#fcbf10;
+    font-size: 60px;
+    font-weight: 700;
+    width: 98%;
+    margin-top: -1rem;
+    cursor: pointer;
+}
+
+#avec a{
+    color: #01785b;
+}
+
+a{
+   text-decoration: none; 
+}   
+
+.container1{
+    text-align: center;
+    white-space: normal;
+    padding-top: 110px;
+    color:#01785b;
+    margin: 0 23%;
+}
+
+.container1 p{
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container1 div{
+    font-size: 21px;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5;
+}
+
+.container2{
+    color: #01785b;
+    margin-top: 150px;
+    white-space: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.right{
+    display: inline-flex;
+}
+
+.right img{
+    width: 50%;
+    max-height: 755px;
+    object-fit: cover;
+}
+
+.right h1{
+    font-weight: bold;
+}
+
+.right div{
+    margin: 0 6%;
+    padding-top: 13%;
+    width: 38%;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.left{
+    display: inline-flex;
+}
+
+.left img{
+    width: 50%;
+    max-height: 755px;
+    object-fit: cover;
+}
+
+.left h1{
+    font-weight: bold;
+}
+
+.left div{
+    margin: 0 6%;
+    width: 38%;
+    font-size: 22px;
+    line-height: 1.5;
+    padding-top: 13%;
+}
+    
