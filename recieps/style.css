@@ -1,29 +1,127 @@
 html {
     font-size: 66.25%;
 }
+
 body {
     margin: 0;
+    background-color: #fff6e0;
+    color: #01785b;
+    font-family: Arial, Bold, sans-serif;
+    margin: 0 10%;
 }
+
+.text--top {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    font-size: 2rem;
+    text-transform: uppercase;
+    justify-content: space-around;
+    font-weight: 700;
+}
+
+.buttons>p {
+    cursor: pointer;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .card {
     position: relative;
     width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 3rem;
 }
+
 .logo {
     position: absolute;
     width: 8rem;
     right: 0;
 }
+
 .img {
     width: 25rem;
     border-radius: 40%;
 }
+
+.img--simple {
+    width: 25rem;
+    border-radius: 5%;
+}
+
 .text {
     font-weight: 1000;
     color: #01785b;
     font-size: 1.5rem;
+    text-align: center;
+    width: 20rem;
+    margin: 1rem 0;
+}
+.page {
+    margin: 0 -10%;
+}
+.up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#left, #right {
+    background-color: #01785b;
+    color: #fff6e0;
+    font-size: 5rem;
+    width: 6rem;
+    height: 6rem;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#container {
-    display: grid;
-    grid-template-columns: auto auto auto;
+.big--img {
+    width: 50rem;
+    border-radius: 15%;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top h1 {
+    font-size: 3rem;
+}
+
+.top p {
+    font-size: 2rem;
+}
+
+.top >div{
+    width: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.top>div>div{
+    width: 60%;
+}
+
+#scroller {
+    display: flex;
+}
+
+#scroller img {
+width: 20rem;
+}
+
+.scroll-top {
+    font-size: 3rem;
 }

@@ -36,7 +36,6 @@ let topSales = [
         logo: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/files/sigtag-grapefruit.png'
     }
 ];
-
 let simple = [
     {
         name: 'AVEC MEXICAN MULE',
@@ -158,7 +157,7 @@ function drawCards() {
     }
 
     for (let i = 0; i < simple.length; i++) {
-        let el = `<div class="card" onclick="drawPage(${topSales.length + i})"> <img class="img" src="${simple[i].img}"> <div class="text">${simple[i].name}</div></div>`
+        let el = `<div class="card" onclick="drawPage(${topSales.length + i})"> <img class="img--simple" src="${simple[i].img}"> <div class="text">${simple[i].name}</div></div>`
         element.innerHTML += el;
     }
 }
@@ -169,12 +168,17 @@ function editKeys(key) {
             return key != e;
         });
         keys = temp;
-        document.getElementById(key).style.backgroundColor = '#e9e9ed';
+        document.getElementById(key).style.color = 'gray';
     } else {
         keys.push(key);
-        document.getElementById(key).style.backgroundColor = 'blue';
+        document.getElementById(key).style.color = 'blue';
     }
     if (keys.length == 0) {
+        document.getElementById('ice').style.color = '#01785b';
+        document.getElementById('orange').style.color = '#01785b';
+        document.getElementById('lime').style.color = '#01785b';
+        document.getElementById('lemon').style.color = '#01785b';
+        document.getElementById('grapefruit').style.color = '#01785b';
         drawCards();
     } else {
         filter();
@@ -206,7 +210,7 @@ function filter() {
             }
         }
         if (flag) {
-            let el = `<div class="card" onclick="drawPage(${topSales.length + j})"> <img class="img" src="${simple[j].img}"> <div class="text">${simple[j].name}</div></div>`
+            let el = `<div class="card" onclick="drawPage(${topSales.length + j})"> <img class="img--simple" src="${simple[j].img}"> <div class="text">${simple[j].name}</div></div>`
             element.innerHTML += el;
         }
     }
@@ -218,32 +222,36 @@ function drawPage(idx) {
     let element = document.getElementById('main');
     let el = `<div class="page">
     <div class="up">
-        <button onclick="drawPage(${idx - 1})" id="left">Left</button>
+        <div onclick="drawPage(${idx - 1})" id="left"><</div>
         <div class="top">
             <img src="${arr[idx].img}" alt="" class="big--img">
+            <div>
+            <div>
             <h1 class="name">${arr[idx].name}</h1>
             <p class="description">${arr[idx].text}</p>
+            </div>
+            </div>
         </div>
-        <button onclick="drawPage(${idx + 1})" id="right">Right</button>
+        <div onclick="drawPage(${idx + 1})" id="right">></div>
     </div>
     <div>
-        <h2>Related Recipes</h2>
+        <h2 class="scroll-top">Related Recipes</h2>
         <div id="scroller">
             <div>
                 <img src="${arr[0].img}" alt="" >
-                <h2>${arr[0].text}</h2>
+                <h2>${arr[0].name}</h2>
             </div>
             <div>
                 <img src="${arr[1].img}" alt="" >
-                <h2>${arr[1].text}</h2>
+                <h2>${arr[1].name}</h2>
             </div>
             <div>
                 <img src="${arr[2].img}" alt="" >
-                <h2>${arr[3].text}</h2>
+                <h2>${arr[3].name}</h2>
             </div>
             <div>
                 <img src="${arr[3].img}" alt="" >
-                <h2>${arr[3].text}</h2>
+                <h2>${arr[3].name}</h2>
             </div>
         </div>
     </div>
