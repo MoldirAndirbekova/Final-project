@@ -57,15 +57,19 @@ body{
     cursor: pointer;
 }
 
+.log a{
+    color: #fcbf10;
+}
+
 #avec{
     text-transform: uppercase;
     position: fixed;
     color:#fcbf10;
     font-size: 60px;
     font-weight: 700;
-    width: 98%;
     margin-top: -1rem;
     cursor: pointer;
+    margin-left: 45%;
 }
 
 #avec a{
@@ -109,6 +113,10 @@ a{
     margin: 660px 0 0 60px;
     display: flex;
     flex-direction: column;
+}
+
+.container1 a{
+    color: #01785b;
 }
 
 .container1 p{
@@ -179,7 +187,7 @@ a{
     z-index: 2;
     background-color: #fff6e0;
     width: 100%;
-    height: 500%;
+    height: 800%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -210,8 +218,8 @@ a{
 }
 
 .container3 div img{
-    padding: 40px 0 0 65px;
-    height: 320px;
+    padding: 20% 0 0 26%;
+    height: 78%;
 }
 
 .item{
@@ -240,6 +248,10 @@ a{
     width: 90%;
 }
 
+.container4 a{
+    color: #01785b;
+}
+
 .container4 div img{
     width: 90%;
     margin-bottom: 40px;
@@ -257,7 +269,7 @@ a{
 
 .container4 button{
     width: 185%;
-    height: 25%;
+    height: 75%;
     background-color: #fff6e0;
     border: 3px solid #01785b;
     border-radius: 40px;
@@ -265,7 +277,8 @@ a{
     font-size: 19px;
     font-weight: 700;
     margin-top: 50px;
-    transition-duration: 0.25s;
+    margin-left: -30%;
+    transition-duration: 0.3ms;
     cursor: pointer;
 }
 
@@ -273,6 +286,10 @@ a{
     color: #fff6e0;
     background-color: #01785b;
 }    
+
+.container4 a:hover{
+    color:#fff6e0;
+}
 
 .container5{
     margin-top: 200px;
@@ -350,4 +367,1208 @@ a{
 .btn-border-green:hover{
     background-color: #01785b;
     color: #fff6e0;
+}
+
+.container6{
+    overflow: hidden;
+}
+
+.horizontal{
+    margin-top: 300px;
+    background-color: #fcbf10;
+    height: 700px;
+    width: 100%;
+    color: white;
+    white-space: normal;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+.horizontal_item{
+    min-width: 100%;
+    display: inline-flex;
+    margin-right: 50px;
+    transition: all 0.3s;
+}
+
+.horizontal::-webkit-scrollbar {
+    display: none;
+}
+
+.horizontal_item:hover{
+    cursor: pointer;
+}
+
+.text-side{
+    width: 65%;
+    margin: 3.8% 2%;
+}
+
+.text-side img{
+    width: 60%;
+}
+
+.text-side p{
+    font-size: 33px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.text-side div{
+    font-size: 33px;
+    font-weight: 600;
+}
+
+.img-side{
+    width: 56%;
+    height: 540px;
+    margin: 80px 20px 80px 20px;
+}
+
+.img-side img{  
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 30px;
+}
+
+#rightleft{
+    position: absolute;
+    margin: 35% 46%;
+    z-index: 2;
+    opacity: 0.3;
+}
+
+.container7{
+    margin: 300px 9%;
+    text-align: center;
+    color: #01785b;
+}
+
+.container7 p{
+    font-size: 60px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.container7-item{
+    display: inline-flex;
+}
+
+.container7-item p{
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.left div{
+    display: inline-flex;
+}
+
+.left, .right{
+    display:flex;
+    flex-direction: column;
+}
+
+.left div div{
+    text-align: start;
+    margin-top: 25px;
+    line-height: 1.5;
+}
+
+.container7-item div div{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.left img{
+    width: 40%;
+    margin: 63% 0 0 25%;
+    transform: rotate(15deg);
+}
+
+#gif{
+    height: 650px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin: 0 8%;
+}
+
+.right img{
+    width: 53%;
+    margin: 8% 0 0 30%;
+    transform: rotate(-15deg);
+}
+
+.right div{
+    display: inline-flex;
+}
+
+.right p{
+   margin-top: 51%;
+}
+
+.right div div{
+    text-align: start;
+    margin-top: 50%;
+    line-height: 1.5;
+}
+
+.container8{
+    height: 800px;
+    margin: 0 0.7%;
+    display: flex;
+    flex-direction: column; 
+    color: #01785b;
+}
+
+.item1{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.item2{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.container8 div div{
+    margin: 5px 5px;
+    position: relative;
+}
+
+.container8 div div::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+.container8 img{ 
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 0.2s;
+}
+
+.container8 img:hover{
+    transform: scale(1.1);
+}
+
+.container8 svg{
+    width: 19%;
+    margin: -7% -15.5%;
+}
+
+.img1{
+    width: 290px;
+}
+
+.img2{
+    width: 200px;
+}
+
+.img3{
+    width: 150px; 
+    margin-right: 30px;
+}
+
+.img4{
+    width: 250px;
+}
+
+.img5{
+    width: 160px;
+}
+
+.img6{
+    width: 220px;
+}
+
+footer {
+    width: 100%;
+    background-color: #01785b;
+    color: #fff6e0;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-around;
+    z-index: 2;
+    position: absolute;
+    white-space: normal;
+}
+
+.inputs{
+    margin: 0 11rem;
+}
+
+footer div {
+    width: 43%;
+}
+
+footer h1 {
+    font-size: 40px;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    background-color:#01785b;
+    border-radius: 2rem;
+    height: 3.5rem;
+    border: 2px solid #fff6e0;
+    outline: none;
+    color: #fff6e0;
+    width: 70%;
+    margin: 0.5rem 0;
+    padding: 0 1.5rem;
+}
+
+@media (max-width: 1720px) {
+    .container7-item div div{
+        font-size: 23px;
+    }
+
+    .container7-item p{
+        font-size: 23px;
+    }
+
+    .left div div{
+    margin-top: 20px;
+    }
+
+    .right-side{
+        margin: 220px 0 0 25px;
+    }
+
+    .container8 svg{
+        width: 15%;
+        margin: -9% 0 0 -11.5%;
+    }
+
+    .item1{
+        font-size: 55px;
+    }
+
+    .item2{
+        font-size: 25px;
+    }
+
+    .log{
+        margin-left: 60%;
+    }
+
+    .main{
+        top: 2050px;
+    }
+
+    .container3 div img{
+        padding: 20% 0 0 23%;
+        height: 78%;
+    }
+
+    .description{
+        font-size: 17px;
+    }
+}   
+
+@media (max-width: 1540px) {
+    .container7-item div div{
+        font-size: 20px;
+    }
+
+    .container7-item p{
+        font-size: 20px;
+    }
+
+    .left div div{
+    margin-top: 15px;
+    }
+
+    .right-side{
+        margin: 220px 0 0 5px;
+    }
+
+    .right-side div{
+        font-size: 40px;
+    }
+    
+    .btn-green{
+        width: 25vw;
+        font-size: 18px;
+    }
+    
+    .p1{
+        font-size: 18px;
+    }
+    
+    .p2{
+        font-size: 18px;  
+    }
+    
+    .btn-border-green{
+        width: 25vw;
+        font-size: 18px;  
+    }
+
+    .container8 svg{
+        width: 12%;
+        margin: -10% 0 0 -9.5%;
+    }
+
+    .item1{
+        font-size: 45px;
+    }
+
+    .item2{
+        font-size: 20px;
+    }
+
+    .main{
+        top: 2200px;
+    }
+
+    .container3 div img{
+        padding: 20% 0 0 21%;
+        height: 78%;
+    }
+
+    .description{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 1440px) {
+    .container7-item div div{
+        font-size: 18px;
+    }
+
+    .container7-item p{
+        font-size: 18px;
+    }
+
+    .right-side{
+        margin: 220px 0 0 5px;
+    }
+
+    .right-side div{
+        font-size: 28px;
+    }
+    
+    .btn-green{
+        width: 20vw;
+        font-size: 18px;
+    }
+    
+    .p1{
+        font-size: 18px;
+    }
+    
+    .btn-border-green{
+        width: 20vw; 
+    }
+
+    .container8 svg{
+        width: 10%;
+        margin: -12% 0 0 -9.5%;
+    }
+
+    .item1{
+        font-size: 35px;
+    }
+
+    .item2{
+        font-size: 18px;
+    }
+
+    .container3 div img{
+        padding: 20% 0 0 28%;
+        height: 70%;
+    }
+
+   .log{
+    margin-left: 50%;
+   }
+
+   .container3{
+    width: 97%;
+    margin: 350px 0 0 3%;
+   } 
+
+   .item, #green{
+	margin: 0 1%;
+    min-width: 14.6%;
+    height: 310px;
+   }
+
+   #green{
+    margin: 0 7.2%;
+   }
+
+.container4{
+    margin: 500px 0 0 10%;
+    display: flex;
+    width: 90%;
+}
+   
+#avec{
+    margin-left: 41%;
+}
+
+.drink{
+    left: 45%;
+}
+
+.container4 div{
+    margin-right: 6%;
+}
+
+.text-side p{
+    font-size: 25px;
+}
+
+.text-side div{
+    font-size: 25px;
+}
+
+.img-side{
+    height: 500px;
+}
+
+}
+
+@media (max-width: 1320px) {
+    .main{
+        height: 900%;
+    }
+
+    .semicircle svg{
+        width: 850px;
+        height: 690px;
+        margin:0 0 -63px -777px;
+    }
+    
+    .semicircle img{
+        margin-bottom: -17px;
+        width: 700px;
+        height: 600px;
+    }
+
+    #gif{
+        height: 600px;
+        margin: 0 5%;
+    }
+
+    .img1{
+        width: 200px;
+    }
+    
+    .img2{
+        width: 170px;
+    }
+    
+    .img3{
+        width: 100px; 
+        margin-right: 30px;
+    }
+    
+    .img4{
+        width: 190px;
+    }
+    
+    .img5{
+        width: 110px;
+    }
+    
+    .img6{
+        width: 150px;
+    }
+}
+
+@media (max-width: 1320px) {
+    .main{
+        height: 6000px;
+    }
+}
+
+@media (max-width: 1175px) {
+    .main{
+        top: 1700px;
+        height: 8100px;
+    }
+
+    #gif{
+        height: 500px;
+    }
+    
+    .right-side div{
+        line-height: 1;
+        font-size: 20px;
+        letter-spacing: 5px;
+    }
+    
+    .btn-green{
+        width: 23vw;
+        font-size: 15px;
+    }
+    
+    .btn-border-green{
+        width: 23vw;
+        font-size: 15px;
+    }
+    .p1{
+        font-size: 15px;
+    }
+    
+    .p2{
+        font-size: 15px;  
+    }
+
+    .container3{
+        display: flex;
+        flex-direction: column;
+        width: 94.8%;
+        margin: 350px 0 0 3.3%;
+    } 
+    
+    .item, #green{
+        margin: 5% 15%;
+        height: 410px;
+        border-radius: 200px;
+    }
+    
+    #green{
+        transform: scale(1);
+        margin: 5% 15%;
+    }
+    
+    .item{
+        font-size: 25px;
+    }
+    
+    .description{
+        margin-top: -460px;
+        z-index: 2;
+        color:white;
+    }
+    
+    #green .description{
+        font-size: 25px;
+    }
+
+    #avec{
+        font-size: 40px;
+        margin-left: 40%;
+    }
+
+    .log{
+        font-size: 1rem;
+        margin-left: 45%;
+    }
+
+    .pages div{
+        font-size: 1rem;
+    }
+
+    .left-text p, .right-text p{
+        font-size: 2rem;
+    }
+    
+    .left-text div, .right-text div{
+        font-size: 1rem;
+        line-height: 1.5rem;   
+     }
+    }
+    
+     @media (max-width: 1175px) {
+        #gif{
+            height: 350px;
+        }
+
+        .semicircle svg{
+            width: 690px;
+            height: 690px;
+            margin:0 0 -100px -630px;
+        }
+        
+        .semicircle img{
+            margin-bottom: 0;
+            width: 550px;
+            height: 490px;
+        }
+
+        .container8 svg{
+            width: 8%;
+            margin: -17% 0 0 -9%;
+        }
+    
+        .item1{
+            font-size: 20px;
+        }
+    
+        .item2{
+            font-size: 13px;
+        }
+
+        .img1{
+            width: 150px;
+        }
+        
+        .img2{
+            width: 120px;
+        }
+        
+        .img3{
+            width: 90px; 
+            margin-right: 30px;
+        }
+        
+        .img4{
+            width: 140px;
+        }
+        
+        .img5{
+            width: 90px;
+        }
+        
+        .img6{
+            width: 170px;
+        }
+    
+     }
+
+     @media (max-width: 932px) {
+        .container7 p{
+            font-size: 30px;
+        }
+
+        .container7-item p{
+            font-size: 15px;
+        }
+        
+        .left div div{
+            margin-top: 10px;
+        }
+        
+        .container7-item div div{
+            font-size: 15px;
+        }
+        
+        .left img{
+            margin: 63% 0 0 20%;
+        }
+
+        .main{
+            height: 7500px;
+        }
+        
+     }
+
+     @media (max-width: 878px) {
+        .container1 button{
+            font-size: 13px;
+            width: 100px;
+            margin: 10px 0 ;
+        }
+
+        .semicircle svg{
+            width: 450px;
+            height: 600px;
+            margin:0 0 -140px -410px;
+        }
+        
+        .semicircle img{
+            width: 410px;
+            height: 320px;
+        }
+
+        #avec{
+            font-size: 30px;
+            margin-left: 41%;
+        }
+    
+        .log{
+            font-size: 0.7rem;
+            margin-left: 45%;
+        }
+
+        .pages div{
+            font-size: 0.7rem;
+        }
+        
+        .container4 div{
+            font-size: 12px;
+        }
+        
+        .container4 button{
+            width: 150%;
+            font-size: 15px;
+           
+        }
+
+        .header2{
+            margin-top: 2.5rem;
+        }
+
+        .container7{
+            margin: 300px 2%;
+        }
+
+        .container8{
+            margin: 0 0.3%;
+        }
+        
+        .item1{
+            font-size: 18px;
+        }
+        
+        .item2{
+            font-size: 13px;
+        }
+        
+        .container8 div div{
+            margin: 1px 1px;
+        }
+        
+        
+        .container8 svg{
+            width: 10%;
+            margin: -21% 0 0 -12%;
+        }
+        
+        .img1{
+            width: 150px;
+        }
+        
+        .img2{
+            width: 120px;
+        }
+        
+        .img3{
+            width: 90px; 
+            margin-right: 30px;
+        }
+        
+        .img4{
+            width: 140px;
+        }
+        
+        .img5{
+            width: 90px;
+        }
+        
+        .img6{
+            width: 170px;
+        }
+     }
+
+     @media (max-width: 878px) {
+        .semicircle svg{
+            width: 450px;
+            height: 600px;
+            margin:0 0 -140px -410px;
+        }
+        
+        .semicircle img{
+            width: 410px;
+            height: 320px;
+        }
+
+        #avec{
+            font-size: 30px;
+            margin-left: 41%;
+        }
+    
+        .log{
+            font-size: 0.7rem;
+            margin-left: 45%;
+        }
+
+        .pages div{
+            font-size: 0.7rem;
+        }
+        
+        .container4 div{
+            font-size: 12px;
+        }
+        
+        .container4 button{
+            width: 150%;
+            font-size: 15px;
+           
+        }
+
+        .header2{
+            margin-top: 2.5rem;
+        }
+
+        .container7{
+            margin: 300px 2%;
+        }
+
+        .container8{
+            margin: 0 0.3%;
+        }
+        
+        .item1{
+            font-size: 18px;
+        }
+        
+        .item2{
+            font-size: 13px;
+        }
+        
+        .container8 div div{
+            margin: 1px 1px;
+        }
+        
+        
+        .container8 svg{
+            width: 10%;
+            margin: -21% 0 0 -12%;
+        }
+        
+        .img1{
+            width: 150px;
+        }
+        
+        .img2{
+            width: 120px;
+        }
+        
+        .img3{
+            width: 90px; 
+            margin-right: 30px;
+        }
+        
+        .img4{
+            width: 140px;
+        }
+        
+        .img5{
+            width: 90px;
+        }
+        
+        .img6{
+            width: 170px;
+        }
+     }
+
+     @media (max-width: 778px) {
+        .container1 p{
+            font-size: 15px;
+        }
+
+        .left-text{
+            width: 80%;
+        }
+
+        .right-text{
+            display: none;
+        }
+
+        #green .description{
+            font-size: 15px;
+            padding-top: 50px;
+        }
+
+        .container5{
+            display:flex;
+            flex-direction: column;
+        }
+     
+        .semicircle svg{
+            width: 690px;
+            height: 690px;
+            margin:0 0 -100px -630px;
+        }
+        
+        .semicircle img{
+            margin-bottom: 0;
+            width: 550px;
+            height: 490px;
+        }
+       
+        .right-side{
+            margin: 100px 0 0 0;
+        }
+    
+        .right-side div{
+            font-size: 40px;
+        }
+        
+        .btn-green{
+            width: 45vw;
+            font-size: 18px;
+        }
+        
+        .p1{
+            font-size: 18px;
+        }
+        
+        .p2{
+            font-size: 18px;  
+        }
+        
+        .btn-border-green{
+            width: 45vw;
+            font-size: 18px;  
+        }
+
+        .horizontal{
+            margin-top: 300px;
+            background-color: #fcbf10;
+            height: 700px;
+            width: 100%;
+            color: white;
+            white-space: normal;
+            display: flex;
+            flex-direction: row;
+            overflow: auto;
+        }
+        
+        .horizontal_item{
+            display: flex;
+            flex-direction: column;
+        }
+    
+        
+        .text-side{
+            width: 100%;
+        }
+        
+        .text-side img{
+            width: 50%;
+        }
+        
+        .text-side p{
+            font-size: 18px;
+        }
+        
+        .text-side div{
+            font-size: 18px;
+        }
+        
+        .img-side{
+            width: 90%;
+            height: 380px;
+            margin: 0px 20px 80px 20px;
+        }
+
+        #rightleft{
+            display: none;
+        }
+
+        .description{
+            display: none;
+        }
+        
+        
+.container7-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.container7-item p{
+    font-size: 18px;
+    margin-left: 8%;
+}
+
+.left div div{
+    margin-top: 15px;
+}
+
+.container7-item div div{
+    font-size: 18px;
+}
+
+.left img{
+    display: none;
+}
+
+#gif{
+    height: 500px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin: 6% 2%;
+}
+
+.right img{
+    display: none;
+}
+
+.right p{
+   margin: 0 0 0 60%;
+}
+
+.right div div{
+    text-align: start;
+    margin-top: 0;
+}
+
+.container8{
+    margin-top: -400px;
+}
+
+.container8 svg{
+    display: none;
+}
+
+.img1{
+    width: 0;
+}
+
+.img2{
+    width: 200px;
+}
+
+.img3{
+    width: 150px; 
+    margin-right: 30px;
+}
+
+.img4{
+    width: 0;
+}
+
+.img5{
+    width: 160px;
+}
+
+.img6{
+    width:0;
+}       
+    
+}
+
+@media (max-width: 690px) {
+    .container3 div img{
+        padding:15% 0 0 38%;
+    }
+
+    .header1{
+        font-size: 1rem;
+    }
+
+    #avec{
+        font-size: 25px;
+    }
+
+    .log{
+        font-size: 0.5rem;
+        margin-left: 40%;
+    }
+
+    .pages div{
+        font-size: 0.5rem;
+    }
+
+    .right p{
+        margin: 0 0 0 50%;
+     }
+
+     .right div div{
+        font-size: 13px;
+        margin-top: -2px;
+    }
+     
+    .container7-item p{
+        font-size: 13px;
+    }
+    
+    .left div div{
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    .text-side p{
+        margin-right: 3%;
+    }
+
+    .text-side p, .text-side div{
+        font-size: 13px;
+    }
+    
+}
+
+@media (max-width: 613px) {
+    .semicircle svg{
+        width: 580px;
+        height: 600px;
+        margin:0 0 -100px -530px;
+    }
+    
+    .semicircle img{
+        margin-bottom: 0;
+        width: 300px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 550px) {
+    .main{
+        height: 8000px;
+    }
+    .pages div{
+        padding-right: 0.4rem;
+    }
+
+    .img2{
+        width: 150px;
+    }
+    
+    .img3{
+        width: 100px; 
+        margin-right: 30px;
+    }
+
+    .img5{
+        width: 110px;
+    }
+    
+    .container4{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    
+    .container4 div{
+        font-size: 13px;
+        height: 100px;
+        width: 30%;
+        margin: 80px 0;
+    }
+}
+
+    @media (max-width: 422px) {
+        #avec{
+            font-size: 20px;
+        }
+    
+        .log{
+            font-size: 0.4rem;
+            margin-left: 40%;
+        }
+        .pages{
+            margin-left: -15px;
+        }
+    
+        .pages div{
+            font-size: 0.4rem;
+        }
+
+        .item1, .item2{
+            font-size: 10px;
+        }
+    
 }

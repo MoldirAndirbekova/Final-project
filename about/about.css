@@ -58,15 +58,19 @@ body{
     cursor: pointer;
 }
 
+.log a{
+    color: #01785b;
+}
+
 #avec{
     text-transform: uppercase;
     position: fixed;
     color:#fcbf10;
     font-size: 60px;
     font-weight: 700;
-    width: 98%;
     margin-top: -1rem;
     cursor: pointer;
+    margin-left: 45%;
 }
 
 #avec a{
@@ -149,3 +153,137 @@ a{
     padding-top: 13%;
 }
     
+@media (max-width: 1175px) {
+    #avec{
+        font-size: 40px;
+        margin-left: 40%;
+    }
+
+    .log{
+        font-size: 1rem;
+        margin-left: 45%;
+    }
+
+    .pages div{
+        font-size: 1rem;
+    }
+    }
+    
+     @media (max-width: 878px) {
+            #avec{
+            font-size: 30px;
+            margin-left: 41%;
+        }
+    
+        .log{
+            font-size: 0.7rem;
+            margin-left: 45%;
+        }
+
+        .pages div{
+            font-size: 0.7rem;
+        }
+
+        .right div{
+            padding-top: 7%;
+            font-size: 15px;
+        }
+
+        .left div{
+            padding-top: 7%;
+            font-size: 15px;
+        }
+
+        .container1 p{
+            font-size: 25px;
+        }
+
+        .container1 div{
+            font-size: 18px;
+        }
+     }
+
+     @media (max-width: 878px) {
+        #avec{
+            font-size: 30px;
+            margin-left: 41%;
+        }
+    
+        .log{
+            font-size: 0.7rem;
+            margin-left: 45%;
+        }
+
+        .pages div{
+            font-size: 0.7rem;
+        }
+    }
+
+@media (max-width: 690px) {
+    #avec{
+        font-size: 25px;
+    }
+
+    .log{
+        font-size: 0.5rem;
+        margin-left: 40%;
+    }
+
+    .pages div{
+        font-size: 0.5rem;
+    }
+    
+}
+
+@media (max-width: 550px) {
+    .pages div{
+        padding-right: 0.4rem;
+    }
+
+    .right div{
+        margin: 0 5%;
+        width: 40%;
+    }
+
+    .left div{
+        margin: 0 5%;
+        width: 40%;
+    }
+
+    .container1{
+        text-align: center;
+        white-space: normal;
+        padding-top: 110px;
+        color:#01785b;
+        margin: 0 10%;
+    }
+}
+
+    @media (max-width: 422px) {
+        #avec{
+            font-size: 20px;
+        }
+    
+        .log{
+            font-size: 0.4rem;
+            margin-left: 40%;
+        }
+        .pages{
+            margin-left: -15px;
+        }
+    
+        .pages div{
+            font-size: 0.4rem;
+        }
+
+        .right div{
+            padding-top: 6%;
+            font-size: 12px;
+        }
+
+        .left div{
+            padding-top: 6%;
+            font-size: 12px;
+        }
+   
+}
