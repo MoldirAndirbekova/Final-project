@@ -2,15 +2,12 @@ body{
     --theme-primary: #01785b;
     --theme-secondary: #fcbf10;
     
-    line-height: 1.4;
     font-size: 1.6rem;
     margin:0;
     background-color: #01785b;
 }
 
-section{
-    display: block;
-}
+
 .main-content{
     background-color: var(--theme-primary);
     color: var(--theme-secondary);
@@ -23,6 +20,7 @@ section{
 .content{
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 3rem;
 }
 .content-text{
     width: 100%;
@@ -84,6 +82,7 @@ section{
 .bottom-text{
     margin-top: 1.5rem;
     margin: 0;
+    margin-bottom: -4rem;
 }
 .actions{
     display: flex;
@@ -100,10 +99,10 @@ section{
     padding-right: 1rem;
     text-align: left;
     font-size: 1.2rem;
-    background: #01785b;
+    background: var(--theme-primary);
     border: 0px;
     font-size: 0.7rem;
-    color: #fcbf10;
+    color: var(--theme-secondary);
 }
 .pointer{
     width: 0.8rem;
@@ -297,15 +296,19 @@ a{
     max-width: 65rem;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: -10rem;
+    margin-bottom: -3rem;
 }
 .first-image{
     display: flex;
     width: 50%;
     flex-direction: column;
     align-items: center;
+    padding-bottom: -10rem;
 }
 .image-content{
-    height: 13rem;
+    height: 6rem;
+    object-fit: cover;
 }
 .image-text{
     margin-top: 1.5rem;
@@ -316,14 +319,15 @@ a{
     color: var(--theme-secondary);
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 2.5rem;
     background-color: var(--theme-primary);
     justify-content: space-between;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: -4rem;
 }
 .content-img{
     margin-left: auto;
@@ -361,6 +365,9 @@ a{
     margin-top: 3rem;
     width: 100%;
 }
+.ing{
+    font-size: 0.9rem;
+}
 .fourth-content{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -368,6 +375,7 @@ a{
     padding-bottom: 1rem;
     background-color: var(--theme-primary);
     color: var(--theme-secondary);
+    margin-top: -10rem;
     
 }
 .fourth-main{
@@ -439,9 +447,10 @@ a{
     letter-spacing: .1em;
 
 }
+
 .small-text{
     margin-top: 2rem;
-    font-size: 1rem!important;
+    font-size: 1.3rem!important;
 }
 .caret{
     width: 0;
@@ -494,6 +503,9 @@ button{
     .recipes{
         margin-top: 1rem;
         
+    }
+    .ing{
+        font-size: 0.5rem;
     }
     .actions{
         flex-wrap: nowrap;
@@ -552,6 +564,7 @@ button{
         padding-right: 3rem;
         padding-top: -7rem;
         padding-bottom: 0rem;
+        margin-top: 1rem;
     }
     .container-col{
         flex-direction: row;
@@ -580,6 +593,9 @@ button{
         border-radius: 2rem;
         border-bottom-right-radius: 2rem;
         border-bottom-left-radius: 2rem;
+    }
+    #menu-it{
+        font-size: 1.5rem;
     }
     
 }

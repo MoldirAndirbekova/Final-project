@@ -1,16 +1,12 @@
 body{
     --theme-primary: #c53447;
     --theme-secondary: #f8bcca;
-    
-    line-height: 1.4;
     font-size: 1.6rem;
     margin:0;
     background-color: var(--theme-primary);
 }
 
-section{
-    display: block;
-}
+
 .main-content{
     background-color: var(--theme-primary);
     color: var(--theme-secondary);
@@ -23,6 +19,7 @@ section{
 .content{
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 1rem;
 }
 .content-text{
     width: 100%;
@@ -84,6 +81,7 @@ section{
 .bottom-text{
     margin-top: 1.5rem;
     margin: 0;
+    margin-bottom: -4rem;
 }
 .actions{
     display: flex;
@@ -113,6 +111,9 @@ section{
     margin-right: 0.5rem;
     border: 1px solid #000;
     
+}
+.ing{
+    font-size: 1.2rem;
 }
 .sub-text{
     pointer-events: none;
@@ -287,6 +288,7 @@ a{
     padding-right: 2rem;
     padding-bottom: -10rem;
     padding-top: -6rem;
+
 }
 .images{
     margin-left: auto;
@@ -296,15 +298,19 @@ a{
     max-width: 65rem;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: -10rem;
+    margin-bottom: -3rem;
 }
 .first-image{
     display: flex;
     width: 50%;
     flex-direction: column;
     align-items: center;
+    padding-bottom: -10rem;
 }
 .image-content{
-    height: 13rem;
+    height: 6rem;
+    object-fit: cover;
 }
 .image-text{
     margin-top: 1.5rem;
@@ -315,14 +321,15 @@ a{
     color: var(--theme-secondary);
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 2.5rem;
     background-color: var(--theme-primary);
     justify-content: space-between;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: -4rem;
 }
 .content-img{
     margin-left: auto;
@@ -367,6 +374,7 @@ a{
     padding-bottom: 1rem;
     background-color: var(--theme-primary);
     color: var(--theme-secondary);
+    margin-top: -10rem;
     
 }
 .fourth-main{
@@ -438,12 +446,10 @@ a{
     letter-spacing: .1em;
 
 }
+
 .small-text{
     margin-top: 2rem;
-    font-size: 1rem!important;
-}
-button{
-    cursor: pointer;
+    font-size: 1.3rem!important;
 }
 .caret{
     width: 0;
@@ -457,6 +463,9 @@ button{
 .show {display:block;} 
 .caret-rotate{
     transform: rotate(180);
+}
+button{
+    cursor: pointer;
 }
 @media(min-width: 850px) {
     body{
@@ -473,15 +482,14 @@ button{
         flex-direction: row;
     }
     .content-text{
-        margin-top: -6rem;
-        width: 45%;
+        width: 50%;
     }
     .inside-text{
         padding-left: 0rem;
         padding-right: 0rem;
     }
     .main-text{
-        font-size: 4rem;
+        font-size: 6.4rem;
     }
     .rating{
         flex-direction: row;
@@ -525,8 +533,7 @@ button{
         padding-right: 2rem;
         padding-top: -20rem;
         
-        padding-bottom: 0rem
-        
+        padding-bottom: 7rem;
         
     }
     
@@ -538,21 +545,22 @@ button{
         padding-left: 3rem;
         padding-right: 3rem;
         padding-top: 0rem;
-        padding-bottom: 0rem;
+        padding-bottom: 5rem;
 
     }
     .content-img{
         width: 50%;
     }
     .menu{
-        margin-top: 15rem;
-        width: 40%;
+        margin-top: 0rem;
+        width: 50%;
     }
     .fourth-content{
         padding-left: 3rem;
         padding-right: 3rem;
-        padding-top: 7rem;
+        padding-top: -7rem;
         padding-bottom: 0rem;
+        margin-top: 1rem;
     }
     .container-col{
         flex-direction: row;
@@ -582,17 +590,8 @@ button{
         border-bottom-right-radius: 2rem;
         border-bottom-left-radius: 2rem;
     }
-    .menushka-topic{
-        font-size: 1.8rem;
-    }
-    .ing{
-        font-size: 1.2rem;
-    }
-    .fourth-main-text{
-        font-size: 2.8rem;
-    }
-    .recipe-items{
-        font-size: 2.8rem;
+    #menu-it{
+        font-size: 1.5rem;
     }
     
 }
