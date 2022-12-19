@@ -10,8 +10,8 @@ body{
 
 }
 
-section{
-    display: block;
+button{
+    cursor: pointer;
 }
 .main-content{
     background-color: var(--theme-primary);
@@ -117,7 +117,7 @@ section{
     position: relative;
     z-index: 2;
     margin-bottom: 1.5rem;
-   width: 50%;
+   width: 70%;
    color: #FFF6E0;
 }
 .select{
@@ -139,7 +139,8 @@ section{
 }
 .select span{
     color: #FFF6E0;
-    font-weight: 900;
+    font-weight: bold;
+    font-size: 0.7rem;
 }
 
 
@@ -203,12 +204,17 @@ a{
     .main-img{
         transform: translateX(15vw);
     }
-   
-    
-    
     .select{
         width: 100%;
         padding-left: -100rem;
+    }
+    .select span{
+        font-size: 0.9rem;
+        
+    }
+    .first-button{
+        height: 80%;
+        width: 50%;
     }
     
 }
