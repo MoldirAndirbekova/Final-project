@@ -1,8 +1,8 @@
-let data = [
+let topSales = [
     {
         name: 'A LIGHTER TROPICAL PUNCH',
         img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/avecrecipephotos_1600x.png',
-        text: '1.5 oz. of Tequila 4 oz. of AVEC Spiced Mango and Passionfruit (or, half a can) Orange Half MoonFill a highball glass with ice. Add tequila. Top with AVEC. Garnish with an orange half moon.Note: for best results, chill your AVEC before using.',
+        text: '1.5 oz. of something 4 oz. of AVEC Spiced Mango and Passionfruit (or, half a can) Orange Half MoonFill a highball glass with ice. Add something. Top with AVEC. Garnish with an orange half moon.Note: for best results, chill your AVEC before using.',
         logo: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/files/signature_mango.png'
     },
     {
@@ -14,7 +14,7 @@ let data = [
     {
         name: 'A LIGHTER SPICY MARG',
         img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/avecrecipephotos_1600x.png',
-        text: '1.5 oz. of Tequila 4 oz. of AVEC Spiced Mango and Passionfruit (or, half a can) Orange Half MoonFill a highball glass with ice. Add tequila. Top with AVEC. Garnish with an orange half moon.Note: for best results, chill your AVEC before using.',
+        text: '1.5 oz. of something 4 oz. of AVEC Spiced Mango and Passionfruit (or, half a can) Orange Half MoonFill a highball glass with ice. Add something. Top with AVEC. Garnish with an orange half moon.Note: for best results, chill your AVEC before using.',
         logo: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/files/sigtag-jalapeno.png'
     },
     {
@@ -32,22 +32,17 @@ let data = [
     {
         name: 'A PALOMA WITHOUT ALL THE SUGAR',
         img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/avecrecipephotos-14_1200x.png',
-        text: ' 4 oz. of AVEC Grapefruit & Pomelo  (or, half a can) Almond Extract Lime Wedge Rimming Salt, optional Rim glass with salt. Add ice, add tequila. Add in 2-3 drops of almond extract, to taste. Top off with AVEC. Gently stir. Add a squeeze of lime. Garnish. Note: for best results, chill your AVEC before using.',
+        text: ' 4 oz. of AVEC Grapefruit & Pomelo  (or, half a can) Almond Extract Lime Wedge Rimming Salt, optional Rim glass with salt. Add ice, add something. Add in 2-3 drops of almond extract, to taste. Top off with AVEC. Gently stir. Add a squeeze of lime. Garnish. Note: for best results, chill your AVEC before using.',
         logo: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/files/sigtag-grapefruit.png'
     }
 ];
 
-for (let i = 0; i < data.length; i++) {
-    let el = `<div class="card"> <img class="logo" src="${data[i].logo}"> <img class="img" src="${data[i].img}"> <div class="text">${data[i].name}</div></div>`
-    document.getElementById('container').innerHTML += el;
-}
-
-let data2 = [
+let simple = [
     {
         name: 'AVEC MEXICAN MULE',
         text: `4 oz. of AVEC Ginger
         Lime Slice
-        Pour tequila and AVEC over ice and garnish with a lime slice.`,
+        Pour something and AVEC over ice and garnish with a lime slice.`,
         img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/avecrecipephotos-08_1600x.png'
     },
     {
@@ -95,11 +90,124 @@ let data2 = [
         Jalapeño, optional
         Pour chilled prosecco into a glass. Top with cold AVEC Jalapeño & Blood Orange to your preferred level of spice. Garnish with a jalapeño slice.
         Note: for best results, chill your AVEC before using. `,
-        img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/avecrecipephotos-09_1600x.png'
+        img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/avecrecipephotos-03_1600x.png'
+    },
+    {
+        name: 'AVEC TOM COLLINS',
+        text: `Squeeze of lemon juice (don’t be shy)
+        4 oz. of AVEC Yuzu & Lime
+        Maraschino Cherry 
+        Stir gin & lemon juice over ice & strain. Top with AVEC. Add a maraschino cherry.`,
+        img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/avecrecipephotos-36_1600x.png'
+    },
+    {
+        name: 'CAMPARI SPRITZ',
+        text: `4 oz. of AVEC Grapefruit & Pomelo
+        In a spritz glass, add ice. Pour Campari. Add prosecco. Top with AVEC. Add a slice of orange or grapefruit.
+        Note: for best results, chill your AVEC before using. `,
+        img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/avecrecipephotos-07_1600x.png'
+    },
+    {
+        name: 'YUZU MOJITO',
+        text: `optional Fresh Mint Sprigs
+        Muddle mint in highball glass. Add ice. Add white rum for a full-proof version. Top AVEC. Gently stir. Add a squeeze of lime.
+        Note: for best results, chill your AVEC before using. `,
+        img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/avecrecipephotos-05_1600x.png'
+    },
+    {
+        name: 'AVEC ITALIAN GREYHOUND',
+        text: `4 oz. of AVEC Grapefruit & Pomelo
+        Splash of Campari
+        Rosemary Stir gin or something and Campari over ice, strain and top AVEC. Garnish with rosemary.`,
+        img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/avecrecipephotos-35_1600x.png'
+    },
+    {
+        name: 'AVEC VERMOUTH MEZCAL',
+        text: `.5 oz. bitters
+        .5 oz. of Sweet Vermouth
+        4 oz. of AVEC Jalapeño and Blood Orange
+        Garnish with Lime or Orange
+        Add ingredients to a highball glass over ice and stir, Garnish with a lime or orange slice. `,
+        img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/avecrecipephotos-10_1600x.png'
+    },
+    {
+        name: 'SAINT AVEC',
+        text: `4 oz. of AVEC Grapefruit & Pomelo
+        Splash of Campari
+        Rosemary Stir and Campari over ice. Strain and top with AVEC. Garnish with rosemary. `,
+        img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/avecrecipephotos-21_1600x.png'
+    },
+    {
+        name: 'GRAPEFRUIT & ROSEMARY',
+        text: `1 can of AVEC Grapefruit & Pomelo
+        Sprig of Rosemary
+        Slice of Lemon
+        Fill a highball glass with ice. Add AVEC and stir with rosemary. Garnish with a lemon slice. `,
+        img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/rosemary_1600x.png'
     }
 ];
 
-for (let i = 0; i < data2.length; i++) {
-    let el = `<div class="card"> <img class="img" src="${data2[i].img}"> <div class="text">${data2[i].name}</div></div>`
-    document.getElementById('container').innerHTML += el;
+let keys = [];
+
+function drawCards() {
+    let element = document.getElementById('container');
+    element.innerHTML = '';
+    for (let i = 0; i < topSales.length; i++) {
+        let el = `<div class="card"> <img class="logo" src="${topSales[i].logo}"> <img class="img" src="${topSales[i].img}"> <div class="text">${topSales[i].name}</div></div>`
+        element.innerHTML += el;
+    }
+    
+    for (let i = 0; i < simple.length; i++) {
+        let el = `<div class="card"> <img class="img" src="${simple[i].img}"> <div class="text">${simple[i].name}</div></div>`
+        element.innerHTML += el;
+    }
 }
+
+function editKeys(key){
+    if (keys.includes(key)) {
+        let temp = keys.filter((e)=>{
+            return key!=e;
+        });
+        keys = temp;
+    } else {
+        keys.push(key);
+    }
+    if (keys.length==0) {
+        drawCards();
+    }else {
+        filter();
+    }
+}
+
+function filter() {
+    let element = document.getElementById('container');
+    element.innerHTML = '';
+    for (let j = 0; j < topSales.length; j++) {
+        let flag = false;
+        for (let i = 0; i < keys.length; i++) {
+            if (topSales[j].text.toLocaleLowerCase().includes(keys[i])) {
+                flag = true;
+                break;
+            }
+        }
+        if (flag) {
+            let el = `<div class="card"> <img class="logo" src="${topSales[j].logo}"> <img class="img" src="${topSales[j].img}"> <div class="text">${topSales[j].name}</div></div>`
+            element.innerHTML += el;
+        }
+    }
+    for (let j = 0; j < simple.length; j++) {
+        let flag = false;
+        for (let i = 0; i < keys.length; i++) {
+            if (simple[j].text.toLocaleLowerCase().includes(keys[i])) {
+                flag = true;
+                break;
+            }
+        }
+        if (flag) {
+            let el = `<div class="card"> <img class="img" src="${simple[j].img}"> <div class="text">${simple[j].name}</div></div>`
+            element.innerHTML += el;
+        }
+    }
+}
+
+drawCards();
