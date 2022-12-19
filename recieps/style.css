@@ -66,34 +66,45 @@ body {
     width: 20rem;
     margin: 1rem 0;
 }
+
 .page {
     margin: 0 -10%;
 }
+
 .up {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#left, #right {
+
+#left,
+#right {
     background-color: #01785b;
     color: #fff6e0;
     font-size: 5rem;
     width: 6rem;
     height: 6rem;
+    border-radius: 50%;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.dr {
+    visibility: hidden;
 }
 
 .big--img {
-    width: 50rem;
+    width: 60rem;
     border-radius: 15%;
 }
 
 .top {
     display: flex;
     justify-content: space-between;
+    width: 80%;
 }
 
 .top h1 {
@@ -104,13 +115,14 @@ body {
     font-size: 2rem;
 }
 
-.top >div{
+.top>div {
     width: 50%;
     justify-content: center;
     display: flex;
     align-items: center;
 }
-.top>div>div{
+
+.top>div>div {
     width: 60%;
 }
 
@@ -118,10 +130,23 @@ body {
     display: flex;
 }
 
+#scroller >div {
+    width: 25%;
+    cursor: pointer;
+}
+
 #scroller img {
-width: 20rem;
+    width: 95%;
+    border-radius: 5%;
 }
 
 .scroll-top {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+#scroller > div > h2 {
+    text-align: center;
+    width: 90%;
     font-size: 3rem;
 }
