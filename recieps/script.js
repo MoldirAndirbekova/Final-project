@@ -8,7 +8,7 @@ let topSales = [
     {
         name: 'A CLEANER MULE (WITH ALL THE KICK)',
         img: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/articles/avecrecipephotos-13_1200x.png',
-        text: '1.5 oz. of something 4 oz. of AVEC Ginger (or, half a can) Angostura Bitters, optional Lime Wedge Fill a highball glass with ice. Add something. Add 3 dashes of angostura bitters. Top off with AVEC. Gently stir. Add a squeeze of lime and garnish.Note: for best results, chill your AVEC before using.', 
+        text: '1.5 oz. of something 4 oz. of AVEC Ginger (or, half a can) Angostura Bitters, optional Lime Wedge Fill a highball glass with ice. Add something. Add 3 dashes of angostura bitters. Top off with AVEC. Gently stir. Add a squeeze of lime and garnish.Note: for best results, chill your AVEC before using.',
         logo: 'https://cdn.shopify.com/s/files/1/0266/2760/4565/files/sigtag-ginger.png'
     },
     {
@@ -153,28 +153,30 @@ function drawCards() {
     let element = document.getElementById('container');
     element.innerHTML = '';
     for (let i = 0; i < topSales.length; i++) {
-        let el = `<div class="card"> <img class="logo" src="${topSales[i].logo}"> <img class="img" src="${topSales[i].img}"> <div class="text">${topSales[i].name}</div></div>`
+        let el = `<div class="card" onclick="drawPage(${i})"> <img class="logo" src="${topSales[i].logo}"> <img class="img" src="${topSales[i].img}"> <div class="text">${topSales[i].name}</div></div>`
         element.innerHTML += el;
     }
-    
+
     for (let i = 0; i < simple.length; i++) {
-        let el = `<div class="card"> <img class="img" src="${simple[i].img}"> <div class="text">${simple[i].name}</div></div>`
+        let el = `<div class="card" onclick="drawPage(${topSales.length + i})"> <img class="img" src="${simple[i].img}"> <div class="text">${simple[i].name}</div></div>`
         element.innerHTML += el;
     }
 }
 
-function editKeys(key){
+function editKeys(key) {
     if (keys.includes(key)) {
-        let temp = keys.filter((e)=>{
-            return key!=e;
+        let temp = keys.filter((e) => {
+            return key != e;
         });
         keys = temp;
+        document.getElementById(key).style.backgroundColor = '#e9e9ed';
     } else {
         keys.push(key);
+        document.getElementById(key).style.backgroundColor = 'blue';
     }
-    if (keys.length==0) {
+    if (keys.length == 0) {
         drawCards();
-    }else {
+    } else {
         filter();
     }
 }
@@ -191,7 +193,7 @@ function filter() {
             }
         }
         if (flag) {
-            let el = `<div class="card"> <img class="logo" src="${topSales[j].logo}"> <img class="img" src="${topSales[j].img}"> <div class="text">${topSales[j].name}</div></div>`
+            let el = `<div class="card" onclick="drawPage(${j})"> <img class="logo" src="${topSales[j].logo}"> <img class="img" src="${topSales[j].img}"> <div class="text">${topSales[j].name}</div></div>`
             element.innerHTML += el;
         }
     }
@@ -204,10 +206,49 @@ function filter() {
             }
         }
         if (flag) {
-            let el = `<div class="card"> <img class="img" src="${simple[j].img}"> <div class="text">${simple[j].name}</div></div>`
+            let el = `<div class="card" onclick="drawPage(${topSales.length + j})"> <img class="img" src="${simple[j].img}"> <div class="text">${simple[j].name}</div></div>`
             element.innerHTML += el;
         }
     }
+}
+
+function drawPage(idx) {
+
+    let arr = [...topSales, ...simple];
+    let element = document.getElementById('main');
+    let el = `<div class="page">
+    <div class="up">
+        <button onclick="drawPage(${idx - 1})" id="left">Left</button>
+        <div class="top">
+            <img src="${arr[idx].img}" alt="" class="big--img">
+            <h1 class="name">${arr[idx].name}</h1>
+            <p class="description">${arr[idx].text}</p>
+        </div>
+        <button onclick="drawPage(${idx + 1})" id="right">Right</button>
+    </div>
+    <div>
+        <h2>Related Recipes</h2>
+        <div id="scroller">
+            <div>
+                <img src="${arr[0].img}" alt="" >
+                <h2>${arr[0].text}</h2>
+            </div>
+            <div>
+                <img src="${arr[1].img}" alt="" >
+                <h2>${arr[1].text}</h2>
+            </div>
+            <div>
+                <img src="${arr[2].img}" alt="" >
+                <h2>${arr[3].text}</h2>
+            </div>
+            <div>
+                <img src="${arr[3].img}" alt="" >
+                <h2>${arr[3].text}</h2>
+            </div>
+        </div>
+    </div>
+</div>`;
+    element.innerHTML = el;
 }
 
 drawCards();
