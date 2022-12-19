@@ -1,12 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
 body{
     --theme-primary:#FFF6E0;
     --theme-secondary:#105544;
     background-color: antiquewhite;
-    line-height: 1.4;
+    
     width: 100vw;
     margin: 0 auto;
-  
-    
+    overflow-x: hidden;
 }
 .header{
     width: 100%;
@@ -49,7 +49,7 @@ body{
 .list-first{
     color: var(--theme-secondary);
     margin-right: 1rem;
-    letter-spacing: .1em;
+    
     text-transform: uppercase;
 }
 .header-main-text{
@@ -103,13 +103,10 @@ body{
 .main-content-second-img{
     max-width: 40rem;
     width: 33%;
+    
 }
 .firstimg{
-    width: 100%;
-    transition-duration: .2s;
-    
-    height: auto;
-    
+    width: 100%;  
 }
 .main-content-second-imgs{
     max-width: 40rem;
@@ -136,11 +133,36 @@ body{
     color: #01785B;
     font-weight: 900;
 }
-.second-content-para{
+.ml2 {
+    width: 100%;
     text-align: center;
-    color: brown;
+    font-size: 3rem;
+    letter-spacing: .1em;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: var(--theme-secondary);
+    font-weight: 900;
+  }
+  
+  .ml2 .letter {
+    display: inline-block;
+    line-height: 1em;
+    font-size: 2.4rem;
+    color: var(--theme-secondary);
+  }
+.line-2{
+    text-align: center;
+    color: var(--theme-secondary);
+    
     
 }
+.second-content-para{
+    text-align: center;
+    color: var(--theme-secondary);
+    font-size: 1.4rem;
+    color: #015943;
+}
+
 .main-content-third{
     width: 100%;
     display: flex;
@@ -149,13 +171,16 @@ body{
     max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 2.2rem;
 }
 .third-content-first{
     display: block;
-    padding-left: 2rem;
+    padding-left: -5rem;
     padding-right: 2rem;
     margin-bottom: 5rem;
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 .column{
     padding-bottom: 166%;
@@ -177,6 +202,20 @@ body{
     position: absolute;
     top: 0rem;
 }
+.vid{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0rem;
+}
+.vide{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0rem;
+}
 .main-form, .second-column{
     width: 100%;
     text-align: center;
@@ -187,10 +226,17 @@ body{
     letter-spacing: .1em;
     text-transform: uppercase;
     font-family: FS Lucas Bold,serif;
+    color:#105544;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    
+    
 }
 .main-form-t{
     margin-top: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.022rem;
+    color: #01785B;
+    
 }
 .first-button{
     width: 100%;
@@ -223,7 +269,8 @@ body{
     text-transform: uppercase;
     letter-spacing: .1em;
     text-decoration: none;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 .button-sec{
     display: block;
@@ -240,6 +287,37 @@ body{
     
     
     font-size: 0.9rem;
+}
+.but{
+    display: block;
+    margin-top: 3rem;
+    background: var(--theme-primary);
+    border: 2px solid var(--theme-secondary);
+    color: var(--theme-secondary);
+    padding: 1rem 4rem;
+    border-radius: 100rem;
+    font-family: FS Lucas Bold,sans-serif;
+    text-align: center;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.butt{
+    display: block;
+    margin-top: 3rem;
+    background: var(--theme-primary);
+    border: 2px solid var(--theme-secondary);
+    color: var(--theme-secondary);
+    padding: 1rem 4rem;
+    border-radius: 100rem;
+    font-family: FS Lucas Bold,sans-serif;
+    text-align: center;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    
 }
 a{
     text-decoration: none;
@@ -274,11 +352,12 @@ a{
     width: 6rem;
     height: 6rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
 }
 .recipe-img{
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
     height: 100%;
 
@@ -286,7 +365,7 @@ a{
 .recipe-text{
     text-align: center;
     margin-top: 2rem;
-    color: #05ad83;
+    color: #01785B;
 }
 .full-text{
     margin-top: 10px;
@@ -315,6 +394,8 @@ a{
     
     text-align: center;
     letter-spacing: .1em;
+    font-weight: bold;
+    
 }
 .close{
     display: none;
@@ -415,6 +496,23 @@ button:hover, a:hover{
     text-transform: uppercase;
     padding: 1.5rem;
 }
+.ml16 {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: var(--theme-secondary);;
+    font-weight: 900;
+    overflow: hidden;
+    
+  }
+  
+  .ml16 .letter {
+    display: inline-block;
+    font-size: 2.9rem;
+  }
 @media(min-width: 850px){
     .login{
         width: auto;
@@ -449,6 +547,24 @@ button:hover, a:hover{
     .menu-list{
         display: flex;
     }
+    .second-button{
+        margin-top: 3rem;
+        font-size: 0.9rem;
+    }
+    .but{
+        margin-top: 3rem;
+        font-size: 0.9rem;
+    }
+    .butt{
+        margin-top: 3rem;
+        font-size: 0.9rem;
+    }
+    .line-2{
+        padding-right: 4rem;
+    }
+    .ml16{
+        padding-left: -10rem;
+    }
     .cart{
         position: fixed;
     }
@@ -466,5 +582,14 @@ button:hover, a:hover{
     .checkout{
         left: 2rem;
     }
+    .ml2 .letter{
+        font-size: 3.3rem;
+    }
+    .main-form-text{
+        font-size: 1rem;
+    }
+    
+    
+
 
 }

@@ -10,29 +10,35 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
     <script>
         var a = false;
         $(document).ready(function(){
             $(".open").click(function(){
-                if(a == false){
+                
                     jQuery('#div' + $(this).attr('target')).show();
                     jQuery('#di' + $(this).attr('target')).hide();
-                    a = true;
-                }
-                else{
-                    jQuery('#div' + $(this).attr('target')).hide();
-                    jQuery('#di' + $(this).attr('target')).show();
-                    a = false;
-                }
+                    jQuery('#close' + $(this).attr('target')).show();
+                    jQuery('#info' + $(this).attr('target')).hide();
+                    
+                
             });
         });
+        
+        $(document).ready(function(){
+            $(".close").click(function(){
+                
+                    jQuery('#div' + $(this).attr('target')).hide();
+                    jQuery('#di' + $(this).attr('target')).show();
+                    jQuery('#close' + $(this).attr('target')).hide();
+                    jQuery('#info' + $(this).attr('target')).show();
+                    
+                
+            });
+        });
+        
 
-        var typed = new Typed(".autotype",{
-            strings: ["By Flavor","Enjoy","Avec"],
-            typeSpeed: 150,
-            backSpeed: 150,
-            loop: true
-        })
     </script>
 </head>
 <body>
@@ -41,7 +47,7 @@
         <div class="header-main">
             <div class="header-text">FREE SHIPPING ALWAYS.</div>
             <div class="header-content">
-                <ul class="menu-list" role="list">
+                <ul class="menu-list">
                     <li class="list-content">
                         <a href="" class="list-first"> Shop</a>
                     </li>
@@ -70,6 +76,8 @@
         </div>
     </header>
 
+
+
     <main id="mainContent" role="main">
         <div>
             <div class="main-content-first">
@@ -83,10 +91,10 @@
                 </div>
                 <div class="main-content-secondd">
                     <div class="second-content">
-                        <h1 class="second-content-text">DRINK BETTER. MIX AVEC.</h1>
+                        <h1 class="ml2">DRINK BETTER. MIX AVEC.</h1>
                         <div class="second-content-para">
                             Ever wondered why the only option to mix with your favorite spirit is either boring old soda water or something full of sugar? 
-                            So did we! We believe your drink should be both delicious &amp; 
+                            So did we! We believe your drink should be both delicious & 
                             better for you. Because, why compromise? Our premium, carbonated mixers are made from real juice, 
                             herbal botanicals, and spices to create naturally delicious, low sugar drinks perfect to pair with your favorite spirit.
                             <br>
@@ -94,73 +102,55 @@
                     </div>
                     <div class="main-content-third">
                         <div class="third-content-first">
-                              <div>
-                                <div class="column">
-                                    <a href="" class="column-img"><img class="column-img-img" src="https://cdn.shopify.com/s/files/1/0266/2760/4565/files/avec_hand_smapler_800width_800x.jpg?v=1653929319" alt="" ></a>
-                                </div>
-                                <form class="main-form">
-                                    <p class="main-form-text">THE SAMPLER</p>
-                                    <p class="main-form-t">Our 15-can variety pack lets you try them all</p>
-                                    <button class="first-button">
-                                        ADD TO CART-
-                                        <span>$45</span>
-                                    </button>
-                                    <a href="" class="second-button">SHOP OUR SAMPLER</a>
-                                </form>
-                              </div>
-                        </div>
-                        <div class="third-content-first">
                             <div>
                               <div class="column">
-                                  <a href="" class="column-img"><img class="column-img-img" src="https://cdn.shopify.com/s/files/1/0266/2760/4565/files/avec_hero_summer_2022_min_1200w_800x.jpg?v=1654030524" alt=""></a>
+                                  <a href="" class="column-img"><video src="../videos/162978539_453877256819692_6851904177092009625_n.mp4" type="video/mp4"  class="vid" loop></video></a>
                               </div>
                               <div class="second-column">
                                 <p class="main-form-text">Custom 12-Pack</p>
                                 <p class="main-form-t">Mix and Match two flavors for a custom pack</p>
-                                
-                                <a class="button-sec" href="" >Build your Bundle</a>
+                                <a class="but" href="" >Build Bundle</a>
                               </div>
                             </div>
                       </div>
-                      <div class="third-content-first">
-                        <div>
-                          <div class="column">
-                              <a href="" class="column-img"><img class="column-img-img" src="https://cdn.shopify.com/s/files/1/0266/2760/4565/products/20221109_GiftSet_Wide_2400px-min_800x.png?v=1668789540" alt=""></a>
-                          </div>
-                          <form class="main-form">
-                              <p class="main-form-text">NAPKINS & COCKTAILS AVEC ATELIER SAUCIER</p>
-                              <p class="main-form-t">2 embroided cocktail napkins, 8 ready-to-mix drinks</p>
-                              <button class="first-button">
-                                  ADD TO CART-
-                                  <span>$49</span>
-                              </button>
-                              <a href="" class="second-button">SEE THE KIT</a>
-                          </form>
+                        <div class="third-content-first">
+                              <div>
+                                <div class="column">
+                                    <a href="" class="column-img"><img class="column-img-img" src="https://cdn.shopify.com/s/files/1/0266/2760/4565/files/avec_hand_smapler_800width_800x.jpg?v=1653929319" alt="" ></a>
+                                </div>
+                                <div class="main-form">
+                                    <p class="main-form-text">THE SAMPLER</p>
+                                    <p class="main-form-t">Our 15-can variety pack lets you try them all</p>
+                                    
+                                    <a href="../button-shop/fisrt.html" class="second-button">SHOP SAMPLER</a>
+                                </div>
+                              </div>
                         </div>
-                  </div>
+                        
+                     
                   <div class="third-content-first">
                     <div>
                       <div class="column">
-                          <a href="" class="column-img"><img class="column-img-img" src="https://cdn.shopify.com/s/files/1/0266/2760/4565/files/party_pack_800x800_45cbb97d-a147-47cb-8ef4-34f44686f02e_800x.jpg?v=1653929730" alt=""></a>
+                          <a href="" class="column-img"><video  src="../videos/302059633_133216096093001_2117092583692226344_n.mp4" type="video/mp4"  class="vide" loop></video></a>
                       </div>
-                      <form class="main-form">
+                      <div class="main-form">
                           <p class="main-form-text">PARTY PACK</p>
-                          <p class="main-form-t">45 cans to share with friends</p>
-                          <button class="first-button">
-                              ADD TO CART-
-                              <span>$115</span>
-                          </button>
-                          <a href="" class="second-button">SHORT PARTY PACK</a>
-                      </form>
+                          <p class="main-form-t">45 cans to share with friends and relatives</p>
+                          
+                          <a href="" class="butt">PARTY PACK</a>
+                      </div>
                     </div>
               </div>
             </div>
         </div>
+
         
         <div class="main-content-secondd">
             <div class="second-content">
-                <h2 class="second-content-text">SHOP <span class="autotype"></span> BY FLAVOR</h2>
-                <div class="second-content-para">Shop 12-Packs of our 5 flavors</div>
+                <h1 class="ml16">Made with love</h1>
+                
+                <div class="line-2">
+                    <h2>Shop 12-Packs of our 5 flavors</h2></div>
             </div>
             <div class="main-content-third">
                 <div class="third-content-first">
@@ -196,21 +186,18 @@
                                 </div>
                             </div>
                             <button class="see">
-                                <span class="open" target="1">INFO</span>
-                                <span class="close">CLOSE</span>
+                                <span class="open" target="1" id="info1">INFO</span>
+                                <span class="close" target="1" id="close1">CLOSE</span>
                             </button>
                         </div>
-                        <form class="main-form">
+                        <div class="main-form">
                             <p class="main-form-text">
                                 Jalapeño &amp; Blood Orange
                             </p>
-                            <p class="main-form-t">A low sugar take on a spicy margarita</p>
-                            <button class="first-button">
-                                Add To Cart—
-                                <span>$36</span>
-                            </button>
+                            <p class="main-form-t">A low sugar take on margarita</p>
+                            
                             <a href="../button-drink/drink.html" class="second-button">Shop Flavor</a>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div class="third-content-first">
@@ -248,21 +235,18 @@
                                 </div>
                             </div>
                             <button class="see">
-                                <span class="open" target="2">INFO</span>
-                                <span class="close">CLOSE</span>
+                                <span class="open" target="2" id="info2">INFO</span>
+                                <span class="close" target="2" id="close2">CLOSE</span>
                             </button>
                         </div>
-                        <form class="main-form">
+                        <div class="main-form">
                             <p class="main-form-text">
-                                Spiced Mango &amp; Passionfruit
+                                Spiced Mango & Fruit
                             </p>
                             <p class="main-form-t">A cleaner tropical punch</p>
-                            <button class="first-button">
-                                Add To Cart—
-                                <span>$36</span>
-                            </button>
+                            
                             <a href="../button-drink/red-drink.html" class="second-button">Shop Flavor</a>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div class="third-content-first">
@@ -295,21 +279,18 @@
                                 </div>
                             </div>
                             <button class="see">
-                                <span class="open" target="3">INFO</span>
-                                <span class="close">CLOSE</span>
+                                <span class="open" target="3" id="info3">INFO</span>
+                                <span class="close" target="3" id="close3">CLOSE</span>
                             </button>
                         </div>
-                        <form class="main-form">
+                        <div class="main-form">
                             <p class="main-form-text">
                                 Yuzu &amp; Lime
                             </p>
                             <p class="main-form-t">Elevated club soda or tonic without the sugar</p>
-                            <button class="first-button">
-                                Add To Cart—
-                                <span>$36</span>
-                            </button>
+                            
                             <a href="../button-drink/yellow-drink.html" class="second-button">Shop Flavor</a>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div class="third-content-first">
@@ -344,21 +325,18 @@
                                 </div>
                             </div>
                             <button class="see">
-                                <span class="open" target="4">INFO</span>
-                                <span class="close">CLOSE</span>
+                                <span class="open" target="4" id="info4">INFO</span>
+                                <span class="close" target="4" id="close4">CLOSE</span>
                             </button>
                         </div>
-                        <form class="main-form">
+                        <div class="main-form">
                             <p class="main-form-text">
                                Grapefruit &amp; Pomelo
                             </p>
                             <p class="main-form-t">Balanced with fresh citrus, vanilla, &amp; pepper</p>
-                            <button class="first-button">
-                                Add To Cart—
-                                <span>$36</span>
-                            </button>
+                           
                             <a href="../button-drink/green-drink.html" class="second-button">Shop Flavor</a>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div class="third-content-first">
@@ -391,21 +369,18 @@
                                 </div>
                             </div>
                             <button class="see">
-                                <span class="open" target="5">INFO</span>
-                                <span class="close">CLOSE</span>
+                                <span class="open" target="5" id="info5">INFO</span>
+                                <span class="close" target="5" id="close5">CLOSE</span>
                             </button>
                         </div>
-                        <form class="main-form">
+                        <div class="main-form">
                             <p class="main-form-text">
                                 Hibiscus &amp; Pomegranate
                             </p>
                             <p class="main-form-t">A modern update to basic cranberry juice</p>
-                            <button class="first-button">
-                                Add To Cart—
-                                <span>$36</span>
-                            </button>
+                            
                             <a href="../button-drink/pink-drink.html" class="second-button">Shop Flavor</a>
-                        </form>
+                        </div>
                     </div>
                 </div>
                 <div class="third-content-first">
@@ -438,21 +413,18 @@
                                 </div>
                             </div>
                             <button class="see">
-                                <span class="open" target="6">INFO</span>
-                                <span class="close">CLOSE</span>
+                                <span class="open" target="6" id="info6">INFO</span>
+                                <span class="close" target="6" id="close6">CLOSE</span>
                             </button>
                         </div>
-                        <form class="main-form">
+                        <div class="main-form">
                             <p class="main-form-text">
-                                Ginger
+                                Ginger & Tasty Drinks
                             </p>
-                            <p class="main-form-t">Ginger &amp; pineapple for a tropical twist</p>
-                            <button class="first-button">
-                                Add To Cart—
-                                <span>$36</span>
-                            </button>
+                            <p class="main-form-t">Ginger & pineapple for a tropical twist</p>
+                           
                             <a href="../button-drink/white-drink.html" class="second-button">Shop Flavor</a>
-                        </form>
+                        </div>
                     </div>
                 </div>
 
@@ -480,10 +452,7 @@
                         <path d="M1 17.9705L17.9706 0.999897" stroke="var(--theme-secondary)" stroke-width="3"></path>
                     </svg></span>
                 </button>
-                <form class="cart-form">
-                    <div></div>
-
-                </form>
+                
             </div>
             <div class="checkout">
                 <button class="submit">
@@ -495,7 +464,8 @@
         </div>
 
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="../shop/demooo.js"></script>
     
 </body>
 </html>
