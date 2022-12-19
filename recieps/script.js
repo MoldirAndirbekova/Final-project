@@ -220,9 +220,11 @@ function drawPage(idx) {
 
     let arr = [...topSales, ...simple];
     let element = document.getElementById('main');
+    let is = [Math.random() * arr.length, Math.random() * arr.length, Math.random() * arr.length, Math.random() * arr.length];
+
     let el = `<div class="page">
     <div class="up">
-        <div onclick="drawPage(${idx - 1})" id="left"><</div>
+        <div onclick="drawPage(${idx - 1})" class="${idx == 0 ? 'dr' : ''}" id="left"><</div>
         <div class="top">
             <img src="${arr[idx].img}" alt="" class="big--img">
             <div>
@@ -232,31 +234,32 @@ function drawPage(idx) {
             </div>
             </div>
         </div>
-        <div onclick="drawPage(${idx + 1})" id="right">></div>
+        <div onclick="drawPage(${idx + 1})" class="${idx == arr.length - 1 ? 'dr' : ''}" id="right">></div>
     </div>
     <div>
         <h2 class="scroll-top">Related Recipes</h2>
         <div id="scroller">
-            <div>
-                <img src="${arr[0].img}" alt="" >
-                <h2>${arr[0].name}</h2>
+            <div onclick="drawPage(${Math.floor(is[0])})">
+                <img src="${arr[Math.floor(is[0])].img}" alt="" >
+                <h2>${arr[Math.floor(is[0])].name}</h2>
             </div>
-            <div>
-                <img src="${arr[1].img}" alt="" >
-                <h2>${arr[1].name}</h2>
+            <div onclick="drawPage(${Math.floor(is[1])})">
+                <img src="${arr[Math.floor(is[1])].img}" alt="" >
+                <h2>${arr[Math.floor(is[1])].name}</h2>
             </div>
-            <div>
-                <img src="${arr[2].img}" alt="" >
-                <h2>${arr[3].name}</h2>
+            <div onclick="drawPage(${Math.floor(is[2])})">
+                <img src="${arr[Math.floor(is[2])].img}" alt="" >
+                <h2>${arr[Math.floor(is[2])].name}</h2>
             </div>
-            <div>
-                <img src="${arr[3].img}" alt="" >
-                <h2>${arr[3].name}</h2>
+            <div onclick="drawPage(${Math.floor(is[3])})">
+                <img src="${arr[Math.floor(is[3])].img}" alt="" >
+                <h2>${arr[Math.floor(is[3])].name}</h2>
             </div>
         </div>
     </div>
 </div>`;
     element.innerHTML = el;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 drawCards();
