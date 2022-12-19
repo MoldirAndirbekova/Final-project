@@ -1,0 +1,29 @@
+html {
+    font-size: 66.25%;
+}
+body {
+    margin: 0;
+}
+.card {
+    position: relative;
+    width: fit-content;
+}
+.logo {
+    position: absolute;
+    width: 8rem;
+    right: 0;
+}
+.img {
+    width: 25rem;
+    border-radius: 40%;
+}
+.text {
+    font-weight: 1000;
+    color: #01785b;
+    font-size: 1.5rem;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
