@@ -38,23 +38,23 @@ anime.timeline({loop: true})
     });
     let clip = document.querySelector(".vid")
     let buttons = document.querySelector(".but")
-    /* Adding the event listeners on the video to play/pause the video. */
+    
     buttons.addEventListener("mouseover", function (e) {
        clip.play();
     })
 
-    /* Applying the mouse out event to pause the video */
+   
     buttons.addEventListener("mouseout", function (e) {
        clip.pause();
     })
     let clips = document.querySelector(".vide")
     let buttonss = document.querySelector(".butt")
-    /* Adding the event listeners on the video to play/pause the video. */
+
     buttonss.addEventListener("mouseover", function (e) {
        clips.play();
     })
 
-    /* Applying the mouse out event to pause the video */
+
     buttonss.addEventListener("mouseout", function (e) {
        clips.pause();
     })
