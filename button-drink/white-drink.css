@@ -455,6 +455,9 @@ a{
 .caret-rotate{
     transform: rotate(180);
 }
+button{
+    cursor: pointer;
+}
 @media(min-width: 850px) {
     body{
         margin: auto;

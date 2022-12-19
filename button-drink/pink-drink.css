@@ -442,6 +442,9 @@ a{
     margin-top: 2rem;
     font-size: 1rem!important;
 }
+button{
+    cursor: pointer;
+}
 .caret{
     width: 0;
     height: 0;
