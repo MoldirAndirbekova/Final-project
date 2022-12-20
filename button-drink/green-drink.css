@@ -597,3 +597,118 @@ button{
     }
     
 }
+footer {
+    background-color: #01785b;
+    color: #fff6e0;
+    padding: 2vw 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-wrap: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff6e0;
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+footer>div>div:first-child {
+    width: 45%;
+}
+
+footer h1 {
+    font-size: 4vw;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer form {
+    font-size: 6px;
+}
+
+footer input {
+    background-color: #01785b;
+    border-radius: 2em;
+    height: 4em;
+    border: 2px solid #fff6e0;
+    outline: none;
+    color: #fff6e0;
+    width: 80%;
+    margin: 1em;
+    padding: 0 1.5em;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+footer>div {
+    font-size: 6px;
+}
+
+.footer--left {
+    display: flex;
+    font-size: 2.8em;
+}
+
+.footer--left>div {
+    margin: 0 3em;
+}
+
+.footer--left a {
+    display: block;
+    margin: 1.5em 0;
+}
+
+.dev {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    width: 90%;
+}
+
+footer .submit {
+    cursor: pointer;
+
+}
+
+footer .submit:hover {
+    background-color: #fff6e0;
+    color: #01785b;
+}
+
+@media screen and (max-width: 1425px) {
+    footer form {
+        font-size: 4px;
+    }
+
+    footer>div {
+        font-size: 4px;
+    }
+
+    .dev {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    footer>div:first-child {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer>div>div:first-child {
+        width: 100%;
+    }
+
+    .footer--left {
+        flex-wrap: wrap;
+    }
+}

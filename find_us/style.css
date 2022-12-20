@@ -127,7 +127,7 @@ footer input {
     font-weight: 700;
 }
 
-footer > div {
+footer>div {
     font-size: 6px;
 }
 
@@ -156,26 +156,32 @@ footer .submit {
     cursor: pointer;
 
 }
+
 footer .submit:hover {
-    background-color:#fff6e0;
+    background-color: #fff6e0;
     color: #01785b;
 }
+
 @media screen and (max-width: 1425px) {
     footer form {
         font-size: 4px;
     }
-    footer > div {
+
+    footer>div {
         font-size: 4px;
     }
+
     .dev {
         font-size: 1rem;
     }
-  }
-  @media screen and (max-width: 955px) {
-    footer > div:first-child {
+}
+
+@media screen and (max-width: 955px) {
+    footer>div:first-child {
         flex-direction: column;
         align-items: center;
     }
+
     footer>div>div:first-child {
         width: 100%;
     }
@@ -183,4 +189,4 @@ footer .submit:hover {
     .footer--left {
         flex-wrap: wrap;
     }
-  }
+}

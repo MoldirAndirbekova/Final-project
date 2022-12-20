@@ -1,31 +1,34 @@
-body{
+body {
     --theme-primary: #01785b;
     --theme-secondary: #fcbf10;
-    
+
     font-size: 1.6rem;
-    margin:0;
+    margin: 0;
     background-color: #01785b;
 }
 
 
-.main-content{
+.main-content {
     background-color: var(--theme-primary);
     color: var(--theme-secondary);
     width: 100vw;
     overflow: hidden;
     padding-right: 2rem;
     padding-bottom: -9rem;
-    
+
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: column-reverse;
     margin-bottom: 3rem;
 }
-.content-text{
+
+.content-text {
     width: 100%;
 }
-.inside-text{
+
+.inside-text {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     max-width: 50rem;
@@ -33,65 +36,76 @@ body{
     z-index: 2;
     position: relative;
 }
-.text{
+
+.text {
     width: 100%;
 }
-.main-text{
+
+.main-text {
     line-height: 1;
     font-size: 3rem;
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: FS Lucas Bold,serif;
+    font-family: FS Lucas Bold, serif;
 }
-.rating{
+
+.rating {
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
-.rating-text{
+
+.rating-text {
     display: block;
     border-radius: 9999px;
-    font-family: FS Lucas Bold,serif;
+    font-family: FS Lucas Bold, serif;
     font-size: 1.6rem;
     text-transform: uppercase;
     letter-spacing: .1em;
     margin-bottom: 1rem;
 }
-.recipes{
+
+.recipes {
     align-items: center;
     display: flex;
     font-size: 1.2rem;
     margin-top: 1.5rem;
 }
-.recipe-text{
+
+.recipe-text {
     letter-spacing: .1em;
     text-transform: uppercase;
-    font-family: FS Lucas Bold,serif;
+    font-family: FS Lucas Bold, serif;
     margin-right: 1rem;
 }
-.immg{
+
+.immg {
     width: 0.8rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
-.center-text{
+
+.center-text {
     margin-top: 1.5rem;
     font-size: 1.2rem;
 }
-.bottom-text{
+
+.bottom-text {
     margin-top: 1.5rem;
     margin: 0;
     margin-bottom: -4rem;
 }
-.actions{
+
+.actions {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 1.5rem;
 }
-.subscribe{
+
+.subscribe {
     display: flex;
     align-items: center;
     padding-top: 1rem;
@@ -104,55 +118,63 @@ body{
     font-size: 0.7rem;
     color: var(--theme-secondary);
 }
-.pointer{
+
+.pointer {
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
     pointer-events: none;
     margin-right: 0.5rem;
     border: 1px solid #000;
-    
+
 }
-.sub-text{
+
+.sub-text {
     pointer-events: none;
     display: flex;
     align-items: center;
 }
-.first{
+
+.first {
     display: block;
     text-transform: uppercase;
 }
-.sec{
+
+.sec {
     margin-left: 0.5rem;
 }
-.first-button{
+
+.first-button {
     position: relative;
     z-index: 2;
     margin-bottom: 1.5rem;
 }
-.select{
+
+.select {
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
     padding: 1rem 4rem;
     border-radius: 100rem;
-    font-family: FS Lucas Bold,sans-serif;
+    font-family: FS Lucas Bold, sans-serif;
     text-align: center;
     letter-spacing: .1em;
     text-transform: uppercase;
     background: var(--theme-primary);
     border: 2px solid var(--theme-secondary);
     color: var(--theme-secondary);
-    
+
 }
-.sign{
+
+.sign {
     margin-left: 1rem;
     display: block;
     width: 1.5rem;
 
 }
-.drop-down{
+
+.drop-down {
     padding: 1rem;
     background-color: var(--theme-primary);
     border-color: var(--theme-secondary);
@@ -171,21 +193,25 @@ body{
     display: none;
     text-align: center;
     font-size: 1.2rem;
-    
+
 }
-.links{
+
+.links {
     padding: 0.3rem;
     color: var(--theme-secondary);
 }
-a{
+
+a {
     text-decoration: none;
 }
-.sec-button{
+
+.sec-button {
     margin-top: 1.5rem;
     display: flex;
     width: 100%;
 }
-.bb{
+
+.bb {
     text-transform: uppercase;
     padding: 1.5rem;
     border-radius: 9999px;
@@ -196,9 +222,10 @@ a{
     color: var(--theme-primary);
     text-align: center;
     letter-spacing: .1em;
-    font-family: FS Lucas Bold,sans-serif;
+    font-family: FS Lucas Bold, sans-serif;
 }
-.bb-sec{
+
+.bb-sec {
     display: flex;
     flex-grow: 1;
     padding-top: 1rem;
@@ -214,18 +241,21 @@ a{
     justify-content: center;
 
 }
-.bb-sec-text{
+
+.bb-sec-text {
     align-items: center;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-.bb-sec-text span{
+
+.bb-sec-text span {
     font-size: 2rem;
-    font-family: FS Lucas Bold,serif;
+    font-family: FS Lucas Bold, serif;
     cursor: pointer;
 }
-.num{
+
+.num {
     font-size: 1.4rem;
     text-align: center;
     justify-content: center;
@@ -234,19 +264,22 @@ a{
     width: 5rem;
     padding: 0;
 }
-.third-button{
+
+.third-button {
     display: flex;
     margin-top: 1.5rem;
     width: 100%;
 
 }
-.button-content{
+
+.button-content {
     width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
 }
-.bl{
+
+.bl {
     width: 100%;
     position: relative;
     text-transform: uppercase;
@@ -259,27 +292,30 @@ a{
     color: var(--theme-primary);
     text-align: center;
     letter-spacing: .1em;
-    font-family: FS Lucas Bold,sans-serif;
+    font-family: FS Lucas Bold, sans-serif;
     font-size: 100%;
 }
-.back-img{
+
+.back-img {
     overflow: hidden;
     width: 100%;
     height: 100vw;
     right: 0rem;
     top: 0rem;
 }
-.main-img{
+
+.main-img {
     width: 100%;
     height: 100%;
-    
+
     max-width: 100%;
-    
+
     object-fit: cover;
     display: block;
-    
+
 }
-.second-content{
+
+.second-content {
     color: var(--theme-secondary);
     width: 100vw;
     background-color: var(--theme-primary);
@@ -288,7 +324,8 @@ a{
     padding-top: -6rem;
 
 }
-.images{
+
+.images {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -299,23 +336,27 @@ a{
     padding-top: -10rem;
     margin-bottom: -3rem;
 }
-.first-image{
+
+.first-image {
     display: flex;
     width: 50%;
     flex-direction: column;
     align-items: center;
     padding-bottom: -10rem;
 }
-.image-content{
+
+.image-content {
     height: 6rem;
     object-fit: cover;
 }
-.image-text{
+
+.image-text {
     margin-top: 1.5rem;
     margin: 0;
     font-size: 1rem;
 }
-.third-content{
+
+.third-content {
     color: var(--theme-secondary);
     padding-top: 7.5rem;
     padding-bottom: 7.5rem;
@@ -329,7 +370,8 @@ a{
     align-items: center;
     margin-bottom: -4rem;
 }
-.content-img{
+
+.content-img {
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -337,38 +379,46 @@ a{
     max-width: 80rem;
     justify-content: space-between;
 }
-.third-img{
+
+.third-img {
     width: 100%;
     max-width: 100%;
     height: auto;
 }
-.menu{
+
+.menu {
     margin-top: 3.5rem;
     width: 100%;
 }
-.menu-text{
+
+.menu-text {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
     max-width: 45rem;
 }
-.menushka{
+
+.menushka {
     width: 100%;
 }
-.menushka-topic{
+
+.menushka-topic {
     text-transform: uppercase;
     font-size: 3rem;
-    font-family: FS Lucas Bold,serif;
+    font-family: FS Lucas Bold, serif;
     margin-bottom: 1.5rem;
 }
-.ingredients{
+
+.ingredients {
     margin-top: 3rem;
     width: 100%;
 }
-.ing{
+
+.ing {
     font-size: 0.9rem;
 }
-.fourth-content{
+
+.fourth-content {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 1rem;
@@ -376,28 +426,32 @@ a{
     background-color: var(--theme-primary);
     color: var(--theme-secondary);
     margin-top: -10rem;
-    
+
 }
-.fourth-main{
+
+.fourth-main {
     position: relative;
     display: flex;
     width: 100%;
     overflow: hidden;
 }
-.inside-fourth{
+
+.inside-fourth {
     display: flex;
     width: 100%;
     align-items: center;
-    
+
 }
-.fourth-main-text{
+
+.fourth-main-text {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 3.5rem;
     font-size: 5rem;
     letter-spacing: .1em;
 }
-.fourth-container{
+
+.fourth-container {
     position: relative;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -406,7 +460,8 @@ a{
     min-width: 100%;
     align-items: center;
 }
-.container-col{
+
+.container-col {
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -414,20 +469,23 @@ a{
     max-width: 100rem;
     flex-direction: column;
 }
-.container-col1{
+
+.container-col1 {
     display: flex;
     width: 100%;
     justify-content: flex-end;
-    
+
 }
-.cont-img{
+
+.cont-img {
     position: relative;
     height: 100vw;
     width: 100%;
     overflow: hidden;
-    
+
 }
-.fourth-main-img{
+
+.fourth-main-img {
     max-width: 100%;
     height: 70%;
     width: 100%;
@@ -436,115 +494,142 @@ a{
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
 }
-.recipe-textt{
+
+.recipe-textt {
     margin-top: -6rem;
     width: 100%;
 }
-.recipe-items{
-    font-family: FS Lucas Bold,serif;
+
+.recipe-items {
+    font-family: FS Lucas Bold, serif;
     font-size: 1.9rem;
     text-transform: uppercase;
     letter-spacing: .1em;
 
 }
 
-.small-text{
+.small-text {
     margin-top: 2rem;
-    font-size: 1.3rem!important;
+    font-size: 1.3rem !important;
 }
-.caret{
+
+.caret {
     width: 0;
     height: 0;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 6px solid #fcbf10;
     transition: 0.3s;
-    margin-left: 1rem ;
+    margin-left: 1rem;
 }
-.show {display:block;} 
-.caret-rotate{
+
+.show {
+    display: block;
+}
+
+.caret-rotate {
     transform: rotate(180);
 }
-button{
+
+button {
     cursor: pointer;
 }
+
 @media(min-width: 850px) {
-    body{
+    body {
         margin: auto;
     }
-    .main-content{
+
+    .main-content {
         padding-bottom: -10rem;
         padding-top: -10rem;
     }
-    .content{
+
+    .content {
         padding-top: 10rem;
         padding-left: 5rem;
         padding-right: 5rem;
         flex-direction: row;
     }
-    .content-text{
+
+    .content-text {
         width: 50%;
     }
-    .inside-text{
+
+    .inside-text {
         padding-left: 0rem;
         padding-right: 0rem;
     }
-    .main-text{
+
+    .main-text {
         font-size: 6.4rem;
     }
-    .rating{
+
+    .rating {
         flex-direction: row;
         align-items: center;
     }
-    .rating-text{
+
+    .rating-text {
         margin-bottom: 0rem;
         margin-right: 1.5rem
     }
-    .recipes{
-        margin-top: 1rem;
-        
-    }
-    .ing{
-        font-size: 0.5rem;
-    }
-    .actions{
-        flex-wrap: nowrap;
-    }
-    .sec-button{
-        margin-top: 1rem;
-    }
-    .bb-sec{
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-    .num{
-        width: 10rem;
-    }
-    .third-button{
+
+    .recipes {
         margin-top: 1rem;
 
     }
-    .back-img{
-         height: unset;
-        position: absolute;
-       
+
+    .ing {
+        font-size: 0.5rem;
     }
-    .main-img{
+
+    .actions {
+        flex-wrap: nowrap;
+    }
+
+    .sec-button {
+        margin-top: 1rem;
+    }
+
+    .bb-sec {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .num {
+        width: 10rem;
+    }
+
+    .third-button {
+        margin-top: 1rem;
+
+    }
+
+    .back-img {
+        height: unset;
+        position: absolute;
+
+    }
+
+    .main-img {
         transform: translateX(15vw);
     }
-    .second-content{
+
+    .second-content {
         padding-left: 2rem;
         padding-right: 2rem;
         padding-top: -20rem;
-        
+
         padding-bottom: 7rem;
-        
+
     }
-    
-    .first-image{
+
+    .first-image {
         width: unset;
     }
-    .third-content{
+
+    .third-content {
         flex-direction: row;
         padding-left: 3rem;
         padding-right: 3rem;
@@ -552,50 +637,177 @@ button{
         padding-bottom: 5rem;
 
     }
-    .content-img{
+
+    .content-img {
         width: 50%;
     }
-    .menu{
+
+    .menu {
         margin-top: 0rem;
         width: 50%;
     }
-    .fourth-content{
+
+    .fourth-content {
         padding-left: 3rem;
         padding-right: 3rem;
         padding-top: -7rem;
         padding-bottom: 0rem;
         margin-top: 1rem;
     }
-    .container-col{
+
+    .container-col {
         flex-direction: row;
     }
-    .container-col1{
+
+    .container-col1 {
         width: 50%;
     }
-    .cont-img{
+
+    .cont-img {
         height: 55rem;
         width: 45rem;
     }
-    .recipe-textt{
+
+    .recipe-textt {
         margin-top: 0rem;
         width: 50%;
         padding-left: 5rem;
-        
+
     }
-    .recipe-items{
+
+    .recipe-items {
         font-size: 3rem;
     }
-    .small-text{
+
+    .small-text {
         margin-top: 2.5rem;
         font: 0.9rem;
     }
-    .fourth-main-img{
+
+    .fourth-main-img {
         border-radius: 2rem;
         border-bottom-right-radius: 2rem;
         border-bottom-left-radius: 2rem;
     }
-    #menu-it{
+
+    #menu-it {
         font-size: 1.5rem;
     }
-    
+
+}
+
+footer {
+    background-color: #01785b;
+    color: #fff6e0;
+    padding: 2vw 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-wrap: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff6e0;
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+footer>div>div:first-child {
+    width: 45%;
+}
+
+footer h1 {
+    font-size: 4vw;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer form {
+    font-size: 6px;
+}
+
+footer input {
+    background-color: #01785b;
+    border-radius: 2em;
+    height: 4em;
+    border: 2px solid #fff6e0;
+    outline: none;
+    color: #fff6e0;
+    width: 80%;
+    margin: 1em;
+    padding: 0 1.5em;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+footer>div {
+    font-size: 6px;
+}
+
+.footer--left {
+    display: flex;
+    font-size: 2.8em;
+}
+
+.footer--left>div {
+    margin: 0 3em;
+}
+
+.footer--left a {
+    display: block;
+    margin: 1.5em 0;
+}
+
+.dev {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    width: 90%;
+}
+
+footer .submit {
+    cursor: pointer;
+
+}
+
+footer .submit:hover {
+    background-color: #fff6e0;
+    color: #01785b;
+}
+
+@media screen and (max-width: 1425px) {
+    footer form {
+        font-size: 4px;
+    }
+
+    footer>div {
+        font-size: 4px;
+    }
+
+    .dev {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    footer>div:first-child {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer>div>div:first-child {
+        width: 100%;
+    }
+
+    .footer--left {
+        flex-wrap: wrap;
+    }
 }
