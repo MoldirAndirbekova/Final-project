@@ -4,6 +4,7 @@ body{
     font-size: 1.6rem;
     margin:0;
     background-color: var(--theme-primary);
+    overflow-x: hidden;
 }
 .imgch{
     filter: invert(41%) sepia(41%) saturate(844%) hue-rotate(295deg) brightness(82%) contrast(90%);

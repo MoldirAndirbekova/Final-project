@@ -14,10 +14,12 @@ body{
     left: 0rem;
     position: fixed;
     top: 0rem;
+    display: none;
 }
 .header-main{
     position: relative;
     z-index: 2;
+    margin-left: 1.2rem;
 }
 .header-text{
     color: var(--theme-primary);
@@ -30,7 +32,7 @@ body{
     text-align: center;
 }
 .header-content{
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding-top: 2rem;
     font-family: FS Lucas Bold,serif;
@@ -38,9 +40,10 @@ body{
     text-transform: uppercase;
     z-index: 2;
     position: relative;
+    
 }
 .menu-list{
-    align-items: flex-start;
+    align-items: center;
     list-style-type: none;
 }
 .list-content{
@@ -56,28 +59,27 @@ body{
     position: absolute;
     width: 12.5rem;
     left: 46%;
-    
+    color: #01785b;
     font-size: 4rem;
+    text-align: center;
 }
 .login{
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+
 }
 .login-main{
     color: var(--theme-secondary);
-    margin-right: 1.5rem;
+    margin-right: 1rem;
     letter-spacing: .1em;
 }
 .open-menu{
     justify-content: center;
     align-items: center;
 }
-.buger{
-    width: 3rem;
-    display: block;
-}
+
 .mainContent{
     display: block;
     min-height: 100vh;
@@ -476,6 +478,7 @@ button:hover, a:hover{
     display: inline-block;
     font-size: 2.9rem;
   }
+   
 @media(min-width: 850px){
     .login{
         width: auto;
@@ -485,6 +488,9 @@ button:hover, a:hover{
         display: block;
     }
     .open-menu{
+        display: none;
+    }
+    .header-content{
         display: none;
     }
     
@@ -503,6 +509,7 @@ button:hover, a:hover{
     .full-text{
         font-size: 1.6rem;
     }
+   
     .header-content{
         padding-left: 3rem;
         padding-right: 3rem;
