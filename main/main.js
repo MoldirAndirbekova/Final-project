@@ -9,7 +9,7 @@ $(document).ready(function(){
         }
         if(height <= 900){
             $('.drink').css('transform', 'scale(' + scind + ')');
-            $('#big-img div').css('box-shadow', 'inset #014a38a0 0 0 100px ' + height + 'px' )
+            $('#big-img div').css('box-shadow', 'inset #014a38a 0 0 0 100px ' + height + 'px' )
         }
     
         if(height >= 700 && height<= 900){
