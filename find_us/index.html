@@ -6,26 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Where To Find Us</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css"
+        type="text/css">
 </head>
 
 <body>
     <header>
         <div class="top">FREE SHIPPING ALWAYS.</div>
         <div class="bottom">
+            <div class="temp" style="display: none;">
+                <svg width="5vw" height="5vw" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    onclick="show()">
+                    <path d="M0 1H24" stroke="#01785b" stroke-width="3"></path>
+                    <path d="M0 10H24" stroke="#01785b" stroke-width="3"></path>
+                    <path d="M0 19H24" stroke="#01785b" stroke-width="3"></path>
+                </svg>
+            </div>
             <div class="left">
-                <div class="text">SHOP</div>
-                <div class="text">ABOUT</div>
-                <div class="text">FIND US</div>
-                <div class="text">RECIEPES</div>
+                <div onclick="window.location.href = '../shop/Shop.html'" class="text">SHOP</div>
+                <div onclick="window.location.href = '../about/about.html'" class="text">ABOUT</div>
+                <div onclick="window.location.reload()" class="text">FIND US</div>
+                <div onclick="window.location.href = '../recieps'" class="text">RECIEPES</div>
             </div>
             <div class="center">AVEC</div>
             <div class="right">LOG IN</div>
         </div>
-        <link rel="stylesheet" href="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/css/ol.css" type="text/css">
+
     </header>
     <section>
         <h1>WHERE TO FIND US</h1>
-        <div id="map" ></div>
+        <div id="map"></div>
     </section>
     <footer>
         <div>
@@ -75,10 +85,10 @@
             <p>SITE BY JUICY</p>
         </div>
     </footer>
-    
 
-<script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
 
+    <script src="https://cdn.rawgit.com/openlayers/openlayers.github.io/master/en/v5.3.0/build/ol.js"></script>
+    <script src="../header.js"></script>
     <script src="script.js"></script>
 </body>
 

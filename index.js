@@ -1,4 +1,15 @@
-let topSales1 = fetch('http://localhost:8080/data');
+import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+
+const app = express();
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(cors({
+   
+}));
+
+
 let topSales = [
     {
         name: 'A LIGHTER TROPICAL PUNCH',
@@ -147,118 +158,15 @@ let simple = [
     }
 ];
 
-let keys = [];
+app.get("/data", (req, res)=>{
+    res.status(200).json(topSales);
+});
 
-function drawCards() {
-    let element = document.getElementById('container');
-    element.innerHTML = '';
-    for (let i = 0; i < topSales.length; i++) {
-        let el = `<div class="card" onclick="drawPage(${i})"> <img class="logo" src="${topSales[i].logo}"> <img class="img" src="${topSales[i].img}"> <div class="text">${topSales[i].name}</div></div>`
-        element.innerHTML += el;
-    }
+app.get("/data2", (req, res) => {
+    res.status(200).json(simple);
+});
 
-    for (let i = 0; i < simple.length; i++) {
-        let el = `<div class="card" onclick="drawPage(${topSales.length + i})"> <img class="img--simple" src="${simple[i].img}"> <div class="text">${simple[i].name}</div></div>`
-        element.innerHTML += el;
-    }
-}
 
-function editKeys(key) {
-    if (keys.includes(key)) {
-        let temp = keys.filter((e) => {
-            return key != e;
-        });
-        keys = temp;
-        document.getElementById(key).style.color = 'gray';
-    } else {
-        keys.push(key);
-        document.getElementById(key).style.color = 'blue';
-    }
-    if (keys.length == 0) {
-        document.getElementById('ice').style.color = '#01785b';
-        document.getElementById('orange').style.color = '#01785b';
-        document.getElementById('lime').style.color = '#01785b';
-        document.getElementById('lemon').style.color = '#01785b';
-        document.getElementById('grapefruit').style.color = '#01785b';
-        drawCards();
-    } else {
-        filter();
-    }
-}
-
-function filter() {
-    let element = document.getElementById('container');
-    element.innerHTML = '';
-    for (let j = 0; j < topSales.length; j++) {
-        let flag = false;
-        for (let i = 0; i < keys.length; i++) {
-            if (topSales[j].text.toLocaleLowerCase().includes(keys[i])) {
-                flag = true;
-                break;
-            }
-        }
-        if (flag) {
-            let el = `<div class="card" onclick="drawPage(${j})"> <img class="logo" src="${topSales[j].logo}"> <img class="img" src="${topSales[j].img}"> <div class="text">${topSales[j].name}</div></div>`
-            element.innerHTML += el;
-        }
-    }
-    for (let j = 0; j < simple.length; j++) {
-        let flag = false;
-        for (let i = 0; i < keys.length; i++) {
-            if (simple[j].text.toLocaleLowerCase().includes(keys[i])) {element.innerHTML = ''k;
-            }
-        }
-        if (flag) {
-            let el = `<div class="card" onclick="drawPage(${topSales.length + j})"> <img class="img--simple" src="${simple[j].img}"> <div class="text">${simple[j].name}</div></div>`
-            element.innerHTML += el;
-        }
-    }
-}
-
-function drawPage(idx) {
-
-    let arr = [...topSales, ...simple];
-    let element = document.getElementById('main');
-    let is = [Math.random() * arr.length, Math.random() * arr.length, Math.random() * arr.length, Math.random() * arr.length];
-
-    let el = `<div class="page">
-    <div class="up">
-        <div onclick="drawPage(${idx - 1})" class="${idx == 0 ? 'dr' : ''}" id="left"><</div>
-        <div class="top">
-            <img src="${arr[idx].img}" alt="" class="big--img">
-            <div>
-            <div>
-            <h1 class="name">${arr[idx].name}</h1>
-            <p class="description">${arr[idx].text}</p>
-            </div>
-            </div>
-        </div>
-        <div onclick="drawPage(${idx + 1})" class="${idx == arr.length - 1 ? 'dr' : ''}" id="right">></div>
-    </div>
-    <div>
-        <h2 class="scroll-top">Related Recipes</h2>
-        <div id="scroller">
-            <div onclick="drawPage(${Math.floor(is[0])})">
-                <img src="${arr[Math.floor(is[0])].img}" alt="" >
-                <h2>${arr[Math.floor(is[0])].name}</h2>
-            </div>
-            <div onclick="drawPage(${Math.floor(is[1])})">
-                <img src="${arr[Math.floor(is[1])].img}" alt="" >
-                <h2>${arr[Math.floor(is[1])].name}</h2>
-            </div>
-            <div onclick="drawPage(${Math.floor(is[2])})">
-                <img src="${arr[Math.floor(is[2])].img}" alt="" >
-                <h2>${arr[Math.floor(is[2])].name}</h2>
-            </div>
-            <div onclick="drawPage(${Math.floor(is[3])})">
-                <img src="${arr[Math.floor(is[3])].img}" alt="" >
-                <h2>${arr[Math.floor(is[3])].name}</h2>
-            </div>
-        </div>
-    </div>
-</div>`;
-    element.innerHTML = el;
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
-drawCards();
+app.listen(process.env.PORT || 8080, () => {
+    console.log('Server started!');
+});

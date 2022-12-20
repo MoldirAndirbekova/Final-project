@@ -7,6 +7,9 @@ body {
     background-color: #fff6e0;
     color: #01785b;
     font-family: Arial, Bold, sans-serif;
+}
+
+body>div:first-child {
     margin: 0 10%;
 }
 
@@ -21,10 +24,12 @@ body {
     text-transform: uppercase;
     justify-content: space-around;
     font-weight: 700;
+    flex-wrap: wrap;
 }
 
 .buttons>p {
     cursor: pointer;
+    margin: 0 4px;
 }
 
 #container {
@@ -97,7 +102,8 @@ body {
 }
 
 .big--img {
-    width: 60rem;
+    width: 60vw;
+    height: 80vw;
     border-radius: 15%;
 }
 
@@ -130,7 +136,7 @@ body {
     display: flex;
 }
 
-#scroller >div {
+#scroller>div {
     width: 25%;
     cursor: pointer;
 }
@@ -145,11 +151,12 @@ body {
     text-align: center;
 }
 
-#scroller > div > h2 {
+#scroller>div>h2 {
     text-align: center;
     width: 90%;
     font-size: 3rem;
 }
+
 footer {
     background-color: #01785b;
     color: #fff6e0;
@@ -202,7 +209,7 @@ footer input {
     font-weight: 700;
 }
 
-footer > div {
+footer>div {
     font-size: 6px;
 }
 
@@ -231,26 +238,32 @@ footer .submit {
     cursor: pointer;
 
 }
+
 footer .submit:hover {
-    background-color:#fff6e0;
+    background-color: #fff6e0;
     color: #01785b;
 }
+
 @media screen and (max-width: 1425px) {
     footer form {
         font-size: 4px;
     }
-    footer > div {
+
+    footer>div {
         font-size: 4px;
     }
+
     .dev {
         font-size: 1rem;
     }
-  }
-  @media screen and (max-width: 955px) {
-    footer > div:first-child {
+}
+
+@media screen and (max-width: 955px) {
+    footer>div:first-child {
         flex-direction: column;
         align-items: center;
     }
+
     footer>div>div:first-child {
         width: 100%;
     }
@@ -258,4 +271,73 @@ footer .submit:hover {
     .footer--left {
         flex-wrap: wrap;
     }
-  }
+
+    header .temp {
+        display: block !important;
+    }
+
+    header .left {
+        display: none !important;
+    }
+}
+
+header {
+    width: 100%;
+    z-index: 5;
+}
+
+
+header .top {
+    text-align: center;
+    color: #fff6e0;
+    background-color: #01785b;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    width: 100%;
+    justify-content: center;
+}
+
+header .bottom {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    padding: 1rem 0;
+    background: linear-gradient(to bottom, rgba(255, 246, 224, 0.8), rgba(255, 246, 224, 0.2));
+}
+
+header .bottom>div {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+header .temp svg {
+    cursor: pointer;
+}
+
+header .text {
+    margin: 0 1rem;
+    white-space: nowrap;
+}
+
+header .center {
+    font-size: 4rem;
+    justify-content: center;
+}
+
+header .right {
+    justify-content: flex-end;
+    margin-right: 4rem;
+    font-size: 16px;
+}
+.blur {
+    text-decoration: none;
+    font-size: 5vw;
+    font-weight: 800;
+    display: block;
+    margin: 2vw;
+    color: #01785b;
+    cursor: pointer;
+}

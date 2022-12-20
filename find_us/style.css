@@ -42,7 +42,9 @@ header .bottom>div {
     padding: 0 0.5rem;
 }
 
-header .left {}
+header .temp svg {
+    cursor: pointer;
+}
 
 header .text {
     margin: 0 1rem;
@@ -189,4 +191,21 @@ footer .submit:hover {
     .footer--left {
         flex-wrap: wrap;
     }
+    header .temp {
+        display: block !important;
+    }
+    header .left {
+        display: none !important;
+    }
 }
+
+.blur {
+    text-decoration: none;
+    font-size: 5vw;
+    font-weight: 800;
+    display: block;
+    margin: 2vw;
+    color: #01785b;
+    cursor: pointer;
+}
+
